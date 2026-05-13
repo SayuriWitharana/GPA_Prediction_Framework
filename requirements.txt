@@ -1,0 +1,14 @@
+pandas
+numpy
+seaborn
+matplot
+scikit-learn
+openpyxl
+pylance
+pathlib
+# sklearn.model_selection
+# sklearn.pipeline
+# sklearn.linear_model
+# sklearn.compose
+# sklearn.impute
+# sklearn.preprocessing
