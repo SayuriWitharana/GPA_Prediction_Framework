@@ -6,6 +6,7 @@ scikit-learn
 openpyxl
 pylance
 pathlib
+statsmodels
 # sklearn.model_selection
 # sklearn.pipeline
 # sklearn.linear_model
