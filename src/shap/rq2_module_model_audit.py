@@ -5,23 +5,23 @@ to explain the evolution of GPA prediction reliability, as specified in the
 TALE research positioning document.
 """
 
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.base import clone
-from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.impute import SimpleImputer
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
-
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from src.preprocessing import clean_categoricals, get_preprocessor  # noqa: E402
+
 DATA = ROOT / "data" / "raw"
 OUT = ROOT / "notebooks" / "shap" / "rq2_module_audit"
 TRAIN_PATH = DATA / "DatasetWithModules_Training.xlsx"
@@ -52,10 +52,7 @@ def performance_group(gpa):
 
 def clean_data(path):
     df = pd.read_excel(path).copy()
-    for column in CATEGORICAL:
-        df[column] = df[column].astype("string").str.strip()
-    # Correct known spelling variants before categorical encoding.
-    df["District"] = df["District"].replace({"Kegalla": "Kegalle", "Kilinochi": "Kilinochchi"})
+    df = clean_categoricals(df, CATEGORICAL)
     for column in MODULE_COLUMNS:
         # I-we/I-ca mean the student did not sit the exam or did not complete
         # the continuous-assessment component, i.e. a fail-equivalent outcome
@@ -75,18 +72,7 @@ def numeric_features(semester):
 
 
 def make_pipeline(model, numeric):
-    numeric_transformer = Pipeline([
-        ("imputer", SimpleImputer(strategy="median", add_indicator=True)),
-        ("scaler", StandardScaler()),
-    ])
-    categorical_transformer = Pipeline([
-        ("imputer", SimpleImputer(strategy="most_frequent")),
-        ("onehot", OneHotEncoder(drop="first", handle_unknown="ignore", min_frequency=5, sparse_output=False)),
-    ])
-    preprocessor = ColumnTransformer([
-        ("numeric", numeric_transformer, numeric),
-        ("categorical", categorical_transformer, CATEGORICAL),
-    ])
+    preprocessor = get_preprocessor(numeric_features=numeric, categorical_features=CATEGORICAL)
     return Pipeline([("preprocessor", preprocessor), ("model", model)])
 
 

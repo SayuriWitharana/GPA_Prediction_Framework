@@ -3,6 +3,7 @@ venv/
 
 # Data (important)
 data/
+conferences/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
