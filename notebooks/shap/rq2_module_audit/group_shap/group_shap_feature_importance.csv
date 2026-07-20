@@ -1,0 +1,622 @@
+semester,group,n_students,feature,raw_feature,family,mean_abs_shap,mean_shap
+0,Underperforming,46,Zscore,numeric__Zscore,Pre-academic,0.0448519211223126,-0.02247606799900384
+0,Underperforming,46,English,numeric__English,Pre-academic,0.20474868310923305,-0.15143957611172643
+0,Underperforming,46,Missing: English,numeric__missingindicator_English,Pre-academic,0.006873354425798928,-0.0007110384478517144
+0,Underperforming,46,Gender_M,categorical__Gender_M,Demographic,0.10261482827716907,-0.03659421535592921
+0,Underperforming,46,Department_BPM,categorical__Department_BPM,Demographic,0.0944812905213456,-0.0234456204583424
+0,Underperforming,46,Department_FSM,categorical__Department_FSM,Demographic,0.005688821840080781,-0.00023721731478137527
+0,Underperforming,46,District_Badulla,categorical__District_Badulla,Demographic,0.024897849420241855,0.0042831415689947635
+0,Underperforming,46,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.0002610142046196205,0.0002610142046196205
+0,Underperforming,46,District_Colombo,categorical__District_Colombo,Demographic,0.030743130189757335,-0.014792842345000922
+0,Underperforming,46,District_Galle,categorical__District_Galle,Demographic,0.005437236941178589,-0.005437236941178589
+0,Underperforming,46,District_Gampaha,categorical__District_Gampaha,Demographic,0.03595809881910035,-0.0006089384001372203
+0,Underperforming,46,District_Kalutara,categorical__District_Kalutara,Demographic,0.026082501769678298,-0.004961377067622889
+0,Underperforming,46,District_Kandy,categorical__District_Kandy,Demographic,0.009186714300149801,-0.009186714300149801
+0,Underperforming,46,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.020360751915483154,0.009020420935544683
+0,Underperforming,46,District_Matara,categorical__District_Matara,Demographic,0.015220879228932931,0.001870407569623548
+0,Underperforming,46,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.005680182139728232,0.0035993493514643407
+0,Underperforming,46,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.054072339543899166,0.015148682970380084
+0,Underperforming,46,MediumAL_S,categorical__MediumAL_S,Demographic,0.05022899602571009,0.005188686374321315
+0,Underperforming,46,MediumAL_T,categorical__MediumAL_T,Demographic,0.05210034008072391,-0.024418808316294838
+0,Underperforming,46,District_Kegalle,categorical__District_Kegalle,Demographic,0.01928303149326846,-0.0037304464418242756
+0,Underperforming,46,District_Puttalam,categorical__District_Puttalam,Demographic,0.002180875262666714,-0.002180875262666714
+0,Underperforming,46,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.000881771609862559,-0.000881771609862559
+0,Average,43,Zscore,numeric__Zscore,Pre-academic,0.038194311782313445,0.0006636491058599908
+0,Average,43,English,numeric__English,Pre-academic,0.09165953341538255,-0.031831435507556564
+0,Average,43,Missing: English,numeric__missingindicator_English,Pre-academic,0.0020750756621747413,0.0012186876141217896
+0,Average,43,Gender_M,categorical__Gender_M,Demographic,0.09761374198830203,-0.013091837601995768
+0,Average,43,Department_BPM,categorical__Department_BPM,Demographic,0.09356514591087889,-0.021610103983829565
+0,Average,43,Department_FSM,categorical__Department_FSM,Demographic,0.007023242489680994,0.0015483961371197943
+0,Average,43,District_Badulla,categorical__District_Badulla,Demographic,0.017515140546411786,-0.0038193090624554786
+0,Average,43,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00027922449796517545,0.00027922449796517545
+0,Average,43,District_Colombo,categorical__District_Colombo,Demographic,0.0387947076537808,0.00020110172610759237
+0,Average,43,District_Galle,categorical__District_Galle,Demographic,0.02080711650187043,0.011264015508297535
+0,Average,43,District_Gampaha,categorical__District_Gampaha,Demographic,0.029996186788835567,-0.0077596544977494965
+0,Average,43,District_Kalutara,categorical__District_Kalutara,Demographic,0.022779581883534024,-0.009673221409275092
+0,Average,43,District_Kandy,categorical__District_Kandy,Demographic,0.018231765308793623,0.000998327262510876
+0,Average,43,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.009246349870850459,-0.0028082760807346258
+0,Average,43,District_Matara,categorical__District_Matara,Demographic,0.013281531011421772,-0.00027533194656299343
+0,Average,43,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.00907423764191457,-0.005311837994924781
+0,Average,43,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.04793888798492752,0.0056605170861857386
+0,Average,43,MediumAL_S,categorical__MediumAL_S,Demographic,0.04014772276076401,-0.011095927159244663
+0,Average,43,MediumAL_T,categorical__MediumAL_T,Demographic,0.03317593294338267,-0.00033913187479103524
+0,Average,43,District_Kegalle,categorical__District_Kegalle,Demographic,0.014838368628857684,0.000746596505519324
+0,Average,43,District_Puttalam,categorical__District_Puttalam,Demographic,0.002088144641323211,-0.002088144641323211
+0,Average,43,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0009432905593878539,-0.0009432905593878539
+0,Performing,88,Zscore,numeric__Zscore,Pre-academic,0.03803695308090065,0.014790094359948285
+0,Performing,88,English,numeric__English,Pre-academic,0.1622826724733213,0.09058040164383674
+0,Performing,88,Missing: English,numeric__missingindicator_English,Pre-academic,0.005466236273412952,-0.000709967352483731
+0,Performing,88,Gender_M,categorical__Gender_M,Demographic,0.08952568593878744,0.025080944397824993
+0,Performing,88,Department_BPM,categorical__Department_BPM,Demographic,0.08981512147187519,0.0222786212415345
+0,Performing,88,Department_FSM,categorical__Department_FSM,Demographic,0.00968441533976928,-0.00046718498774464654
+0,Performing,88,District_Badulla,categorical__District_Badulla,Demographic,0.019801285617770326,-0.001457500946738083
+0,Performing,88,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00027287848664778506,0.00027287848664778506
+0,Performing,88,District_Colombo,categorical__District_Colombo,Demographic,0.04279423544368824,0.007326790768499145
+0,Performing,88,District_Galle,categorical__District_Galle,Demographic,0.008189796959218523,-0.0024339010452041885
+0,Performing,88,District_Gampaha,categorical__District_Gampaha,Demographic,0.04138909162115137,0.006551184476608408
+0,Performing,88,District_Kalutara,categorical__District_Kalutara,Demographic,0.03433502804929227,0.00395246861107656
+0,Performing,88,District_Kandy,categorical__District_Kandy,Demographic,0.022508660627952707,0.005653002149196166
+0,Performing,88,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.011397935976132305,-0.0005629319755366342
+0,Performing,88,District_Matara,categorical__District_Matara,Demographic,0.013612024389721618,-8.733546062215242e-05
+0,Performing,88,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0060525934528822345,-0.002064674281711303
+0,Performing,88,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.03921909332548168,-0.00950034580560309
+0,Performing,88,MediumAL_S,categorical__MediumAL_S,Demographic,0.04969618058785066,0.00451555658430327
+0,Performing,88,MediumAL_T,categorical__MediumAL_T,Demographic,0.030803418409882485,0.00293699283053611
+0,Performing,88,District_Kegalle,categorical__District_Kegalle,Demographic,0.008092688905879252,0.008092688905879252
+0,Performing,88,District_Puttalam,categorical__District_Puttalam,Demographic,0.002100516595530472,-0.002100516595530472
+0,Performing,88,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0008706381299400521,-0.0008706381299400521
+1,Underperforming,46,Zscore,numeric__Zscore,Pre-academic,0.009093903894455763,-0.0035357612655915337
+1,Underperforming,46,English,numeric__English,Pre-academic,0.05395634712155332,-0.039126309949504556
+1,Underperforming,46,S1,numeric__S1,Semester GPA,0.39079397622190787,-0.38925234172093154
+1,Underperforming,46,Missing: English,numeric__missingindicator_English,Pre-academic,0.005806134791638128,0.0003387263466600285
+1,Underperforming,46,Gender_M,categorical__Gender_M,Demographic,0.02218928755076671,-0.00874934742425845
+1,Underperforming,46,Department_BPM,categorical__Department_BPM,Demographic,0.024770691943983517,-0.005455882722884025
+1,Underperforming,46,Department_FSM,categorical__Department_FSM,Demographic,0.008981956055731244,0.006182299367921218
+1,Underperforming,46,District_Badulla,categorical__District_Badulla,Demographic,0.012568435883552153,0.0039020468333911297
+1,Underperforming,46,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.0001476210336498759,0.0001476210336498759
+1,Underperforming,46,District_Colombo,categorical__District_Colombo,Demographic,0.004700123114323778,0.003424224383867796
+1,Underperforming,46,District_Galle,categorical__District_Galle,Demographic,0.0017546480966382934,0.001344088928243291
+1,Underperforming,46,District_Gampaha,categorical__District_Gampaha,Demographic,0.018850590106790716,-0.0003262762980759644
+1,Underperforming,46,District_Kalutara,categorical__District_Kalutara,Demographic,0.006893657990816424,-0.002406002609956484
+1,Underperforming,46,District_Kandy,categorical__District_Kandy,Demographic,0.0008892907570379702,0.0008803489657982902
+1,Underperforming,46,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.009977924147942185,0.004119667282671993
+1,Underperforming,46,District_Matara,categorical__District_Matara,Demographic,0.007111767738101251,0.0008003464709452937
+1,Underperforming,46,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.004358749523207231,0.003152367991636942
+1,Underperforming,46,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.008656254820874511,0.0024804028749367026
+1,Underperforming,46,MediumAL_S,categorical__MediumAL_S,Demographic,0.008018390400518282,-0.0007662066019980772
+1,Underperforming,46,MediumAL_T,categorical__MediumAL_T,Demographic,0.018080309083228028,-0.008383845541731634
+1,Underperforming,46,District_Kegalle,categorical__District_Kegalle,Demographic,0.02114917390650178,-0.0044066206634650025
+1,Underperforming,46,District_Puttalam,categorical__District_Puttalam,Demographic,0.0011695539536413805,-0.0011695539536413805
+1,Underperforming,46,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0007391292263776334,-0.0007391292263776334
+1,Average,43,Zscore,numeric__Zscore,Pre-academic,0.009998930598203969,-0.00011255490939495435
+1,Average,43,English,numeric__English,Pre-academic,0.024620190323343682,-0.0075559036304547154
+1,Average,43,S1,numeric__S1,Semester GPA,0.17308602773146028,-0.0741337419562532
+1,Average,43,Missing: English,numeric__missingindicator_English,Pre-academic,0.002311904454422403,-0.0017886864952815701
+1,Average,43,Gender_M,categorical__Gender_M,Demographic,0.02172378971968836,-0.006509828007616891
+1,Average,43,Department_BPM,categorical__Department_BPM,Demographic,0.02449695565991864,-0.005332799046297164
+1,Average,43,Department_FSM,categorical__Department_FSM,Demographic,0.011362832222590531,0.0032133631692098704
+1,Average,43,District_Badulla,categorical__District_Badulla,Demographic,0.006335037099376079,-0.003049434081149619
+1,Average,43,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.0001579201755324254,0.0001579201755324254
+1,Average,43,District_Colombo,categorical__District_Colombo,Demographic,0.006664690864821802,-3.68085146306798e-05
+1,Average,43,District_Galle,categorical__District_Galle,Demographic,0.006975846671767181,-0.001596789211223861
+1,Average,43,District_Gampaha,categorical__District_Gampaha,Demographic,0.015356825291101057,-0.004507211351134932
+1,Average,43,District_Kalutara,categorical__District_Kalutara,Demographic,0.005842873856082508,-0.0038141874892778345
+1,Average,43,District_Kandy,categorical__District_Kandy,Demographic,0.0011631161553175085,0.0005832715860970644
+1,Average,43,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.004400403219254247,-0.0018190721096917784
+1,Average,43,District_Matara,categorical__District_Matara,Demographic,0.007379644246494082,0.0012963061588612433
+1,Average,43,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.008707077993906232,-0.004500764284611815
+1,Average,43,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.007705888549141158,0.0009530607045136042
+1,Average,43,MediumAL_S,categorical__MediumAL_S,Demographic,0.007010215058142506,0.002141344122114868
+1,Average,43,MediumAL_T,categorical__MediumAL_T,Demographic,0.013526739523892828,-0.0017396394250665552
+1,Average,43,District_Kegalle,categorical__District_Kegalle,Demographic,0.01563830024881383,0.0011404199851131956
+1,Average,43,District_Puttalam,categorical__District_Puttalam,Demographic,0.0011215372316720322,-0.0011215372316720322
+1,Average,43,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0007906963817063055,-0.0007906963817063055
+1,Performing,88,Zscore,numeric__Zscore,Pre-academic,0.009184149700342264,0.0030834495681758656
+1,Performing,88,English,numeric__English,Pre-academic,0.04395805812765985,0.025507174245180605
+1,Performing,88,S1,numeric__S1,Semester GPA,0.27454703428406896,0.23772144504427137
+1,Performing,88,Missing: English,numeric__missingindicator_English,Pre-academic,0.004638762870517225,0.0007339787034406076
+1,Performing,88,Gender_M,categorical__Gender_M,Demographic,0.019067607007657122,0.006411183575554721
+1,Performing,88,Department_BPM,categorical__Department_BPM,Demographic,0.02339915149338203,0.00511535372544846
+1,Performing,88,Department_FSM,categorical__Department_FSM,Demographic,0.01499865559316405,-0.0029679638977403683
+1,Performing,88,District_Badulla,categorical__District_Badulla,Demographic,0.009801469006494683,0.0008641048957296502
+1,Performing,88,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00015433108063396116,0.00015433108063396116
+1,Performing,88,District_Colombo,categorical__District_Colombo,Demographic,0.006721522135573357,0.001357180096536771
+1,Performing,88,District_Galle,categorical__District_Galle,Demographic,0.0026031834663704026,0.000434727771766593
+1,Performing,88,District_Gampaha,categorical__District_Gampaha,Demographic,0.021196696982317496,0.0029103217489156175
+1,Performing,88,District_Kalutara,categorical__District_Kalutara,Demographic,0.01017387627052748,0.001227959317869053
+1,Performing,88,District_Kandy,categorical__District_Kandy,Demographic,0.002400055447042863,-0.0007276190502284243
+1,Performing,88,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.00597240525954566,-0.00014650419461190956
+1,Performing,88,District_Matara,categorical__District_Matara,Demographic,0.005928878133345444,-0.00046419127256296257
+1,Performing,88,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.005750394398002382,-0.0013340461523215887
+1,Performing,88,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.00623652033079598,-0.0016819246334915515
+1,Performing,88,MediumAL_S,categorical__MediumAL_S,Demographic,0.008963746745045126,-0.0011357363809711583
+1,Performing,88,MediumAL_T,categorical__MediumAL_T,Demographic,0.011540596193641079,0.0003048528196866002
+1,Performing,88,District_Kegalle,categorical__District_Kegalle,Demographic,0.008710926449496519,0.008710926449496519
+1,Performing,88,District_Puttalam,categorical__District_Puttalam,Demographic,0.0011277146860977025,-0.0011277146860977025
+1,Performing,88,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0007297967866506431,-0.0007297967866506431
+2,Underperforming,46,Zscore,numeric__Zscore,Pre-academic,0.012906362748093326,-0.008710200456085438
+2,Underperforming,46,English,numeric__English,Pre-academic,0.059942722837641266,-0.043919843053098116
+2,Underperforming,46,S1,numeric__S1,Semester GPA,0.17052416828174496,-0.16967316121738135
+2,Underperforming,46,S2,numeric__S2,Semester GPA,0.31928133274342996,-0.30581693366427104
+2,Underperforming,46,Maths 2,numeric__Maths 2,Module grade,0.030829539407264062,0.019805141346009275
+2,Underperforming,46,MgtAccounting,numeric__MgtAccounting,Module grade,0.016727971617629137,-0.010825020245170215
+2,Underperforming,46,Missing: English,numeric__missingindicator_English,Pre-academic,0.004940067558559159,-0.001515148584657355
+2,Underperforming,46,Gender_M,categorical__Gender_M,Demographic,0.01740420563552263,-0.005919271109640522
+2,Underperforming,46,Department_BPM,categorical__Department_BPM,Demographic,0.007908643283333606,-0.001817790529745221
+2,Underperforming,46,Department_FSM,categorical__Department_FSM,Demographic,0.02273894547264673,0.012695410952540063
+2,Underperforming,46,District_Badulla,categorical__District_Badulla,Demographic,0.006794205253657105,0.002015597464984762
+2,Underperforming,46,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.0004011206911134612,-0.0004011206911134612
+2,Underperforming,46,District_Colombo,categorical__District_Colombo,Demographic,0.006002099233363229,0.004372787576722361
+2,Underperforming,46,District_Galle,categorical__District_Galle,Demographic,0.0006580867710014516,0.0001606594837400408
+2,Underperforming,46,District_Gampaha,categorical__District_Gampaha,Demographic,0.017937111980567303,-0.0002537197106740932
+2,Underperforming,46,District_Kalutara,categorical__District_Kalutara,Demographic,0.00614680057673571,-0.0020505566142422858
+2,Underperforming,46,District_Kandy,categorical__District_Kandy,Demographic,0.002191303089679138,0.002191303089679138
+2,Underperforming,46,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.004569616866233445,0.0014451892014776047
+2,Underperforming,46,District_Matara,categorical__District_Matara,Demographic,0.006569140427827002,4.6782536703975804e-07
+2,Underperforming,46,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0034304224969313886,0.0018133935903808312
+2,Underperforming,46,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.008140706219523444,0.0025560266111494547
+2,Underperforming,46,MediumAL_S,categorical__MediumAL_S,Demographic,0.005214724908964057,0.0001589244196451862
+2,Underperforming,46,MediumAL_T,categorical__MediumAL_T,Demographic,0.010788127137535231,-0.005104988935204727
+2,Underperforming,46,District_Kegalle,categorical__District_Kegalle,Demographic,0.007861066714656147,-0.0021105102617100273
+2,Underperforming,46,District_Puttalam,categorical__District_Puttalam,Demographic,0.000861102793356888,-0.000861102793356888
+2,Underperforming,46,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.00029893547658309673,-0.00029893547658309673
+2,Average,43,Zscore,numeric__Zscore,Pre-academic,0.009714574605758476,0.000653726232487089
+2,Average,43,English,numeric__English,Pre-academic,0.02765860079366442,-0.00796772476564271
+2,Average,43,S1,numeric__S1,Semester GPA,0.07759617918442928,-0.03374733775042977
+2,Average,43,S2,numeric__S2,Semester GPA,0.10859065513284726,-0.04380071890142326
+2,Average,43,Maths 2,numeric__Maths 2,Module grade,0.02459326965982538,0.005174606261791696
+2,Average,43,MgtAccounting,numeric__MgtAccounting,Module grade,0.009658071138766738,-0.00015186661884610905
+2,Average,43,Missing: English,numeric__missingindicator_English,Pre-academic,0.0015609341715688953,-4.890700587542368e-05
+2,Average,43,Gender_M,categorical__Gender_M,Demographic,0.0166766094395844,-0.0036531445218026554
+2,Average,43,Department_BPM,categorical__Department_BPM,Demographic,0.00828810849268199,-0.0018905317168818512
+2,Average,43,Department_FSM,categorical__Department_FSM,Demographic,0.025953041938523425,0.007745840556534094
+2,Average,43,District_Badulla,categorical__District_Badulla,Demographic,0.0037552169373491163,-0.0014508164904744032
+2,Average,43,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00042910585560974917,-0.00042910585560974917
+2,Average,43,District_Colombo,categorical__District_Colombo,Demographic,0.008703090294077719,0.0006963753232851063
+2,Average,43,District_Galle,categorical__District_Galle,Demographic,0.003082350293942892,0.0006599840727715334
+2,Average,43,District_Gampaha,categorical__District_Gampaha,Demographic,0.014698269558838815,-0.004036297666239027
+2,Average,43,District_Kalutara,categorical__District_Kalutara,Demographic,0.005166612035708485,-0.0032140330967005133
+2,Average,43,District_Kandy,categorical__District_Kandy,Demographic,0.004032237299142126,0.00013673361141812947
+2,Average,43,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0020571502439417615,0.00020833257743126628
+2,Average,43,District_Matara,categorical__District_Matara,Demographic,0.007845645220598423,0.0015048089772511726
+2,Average,43,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.004261495506969756,-0.002587926192493099
+2,Average,43,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.006865957304948227,0.00025157046514165263
+2,Average,43,MediumAL_S,categorical__MediumAL_S,Demographic,0.005039615757361125,0.0011944189480728366
+2,Average,43,MediumAL_T,categorical__MediumAL_T,Demographic,0.007836925343473097,-0.0012162869037854662
+2,Average,43,District_Kegalle,categorical__District_Kegalle,Demographic,0.005243837096590707,0.0005108001969440285
+2,Average,43,District_Puttalam,categorical__District_Puttalam,Demographic,0.000835301356794806,-0.000835301356794806
+2,Average,43,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0003197914400656383,-0.0003197914400656383
+2,Performing,88,Zscore,numeric__Zscore,Pre-academic,0.0089313767134369,0.002942330676145758
+2,Performing,88,English,numeric__English,Pre-academic,0.04950050950174568,0.029062586619834786
+2,Performing,88,S1,numeric__S1,Semester GPA,0.1196628921116214,0.10310046066088802
+2,Performing,88,S2,numeric__S2,Semester GPA,0.1990322075059798,0.1838585266925034
+2,Performing,88,Maths 2,numeric__Maths 2,Module grade,0.0295421012944987,-0.01113770099462001
+2,Performing,88,MgtAccounting,numeric__MgtAccounting,Module grade,0.013500334507402128,0.005335351451910218
+2,Performing,88,Missing: English,numeric__missingindicator_English,Pre-academic,0.002868408361141647,0.0009668667153266777
+2,Performing,88,Gender_M,categorical__Gender_M,Demographic,0.01496244227866183,0.004332882589517123
+2,Performing,88,Department_BPM,categorical__Department_BPM,Demographic,0.007423717763541871,-0.00026812767533665195
+2,Performing,88,Department_FSM,categorical__Department_FSM,Demographic,0.03531521210385822,-0.007286535393311685
+2,Performing,88,District_Badulla,categorical__District_Badulla,Demographic,0.005590842691889218,0.0006365438125639899
+2,Performing,88,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.0004193534498004367,-0.0004193534498004367
+2,Performing,88,District_Colombo,categorical__District_Colombo,Demographic,0.008318536357408209,0.0013907359237634632
+2,Performing,88,District_Galle,categorical__District_Galle,Demographic,0.0007186412906819091,0.00020283779232346864
+2,Performing,88,District_Gampaha,categorical__District_Gampaha,Demographic,0.0199949119279236,0.002725412146825893
+2,Performing,88,District_Kalutara,categorical__District_Kalutara,Demographic,0.009943541052301509,0.002268196429073195
+2,Performing,88,District_Kandy,categorical__District_Kandy,Demographic,0.005516580122592794,-0.001475989851168176
+2,Performing,88,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.002834735722694035,0.0003594139574494962
+2,Performing,88,District_Matara,categorical__District_Matara,Demographic,0.006082993239668705,-0.0004708872137648154
+2,Performing,88,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0029299248960723847,-0.001255549236646211
+2,Performing,88,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.005634251079082916,-0.0011696627991877977
+2,Performing,88,MediumAL_S,categorical__MediumAL_S,Demographic,0.006257089818212731,-0.0008164312229982277
+2,Performing,88,MediumAL_T,categorical__MediumAL_T,Demographic,0.0066153873894282565,0.00055239647765056
+2,Performing,88,District_Kegalle,categorical__District_Kegalle,Demographic,0.002979518267591205,0.002979518267591205
+2,Performing,88,District_Puttalam,categorical__District_Puttalam,Demographic,0.0008372988836417433,-0.0008372988836417433
+2,Performing,88,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0002951610387474516,-0.0002951610387474516
+3,Underperforming,46,Zscore,numeric__Zscore,Pre-academic,0.013849627692386624,-0.00982489012417784
+3,Underperforming,46,English,numeric__English,Pre-academic,0.01291604935040499,0.005627570020581682
+3,Underperforming,46,S1,numeric__S1,Semester GPA,0.147455790992439,-0.1467122750215543
+3,Underperforming,46,S2,numeric__S2,Semester GPA,0.18113966240968918,-0.17368785791962124
+3,Underperforming,46,S3,numeric__S3,Semester GPA,0.23057377243192495,-0.2200087606782743
+3,Underperforming,46,Maths 2,numeric__Maths 2,Module grade,0.019214543920956884,0.012790050503514056
+3,Underperforming,46,MgtAccounting,numeric__MgtAccounting,Module grade,0.011978319790321273,-0.0055623279549474915
+3,Underperforming,46,StatsII,numeric__StatsII,Module grade,0.03296170016421962,0.02508625791306914
+3,Underperforming,46,MIS,numeric__MIS,Module grade,0.003717773467738109,-0.0009262672941470878
+3,Underperforming,46,Missing: English,numeric__missingindicator_English,Pre-academic,0.0033475730562092933,-0.0006454083495338205
+3,Underperforming,46,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.030357869253817976,-0.016890568197322535
+3,Underperforming,46,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.017323295624712264,-0.008750312486453743
+3,Underperforming,46,Gender_M,categorical__Gender_M,Demographic,0.007689671572377047,-0.0008739112228302919
+3,Underperforming,46,Department_BPM,categorical__Department_BPM,Demographic,0.012079983588711483,-0.0024783822936931305
+3,Underperforming,46,Department_FSM,categorical__Department_FSM,Demographic,0.014921183223100721,0.007937405074707323
+3,Underperforming,46,District_Badulla,categorical__District_Badulla,Demographic,0.0031735806041974283,0.0004811846721824693
+3,Underperforming,46,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00015860530434220365,-0.00015860530434220365
+3,Underperforming,46,District_Colombo,categorical__District_Colombo,Demographic,0.006865359041901503,0.005562757523139491
+3,Underperforming,46,District_Galle,categorical__District_Galle,Demographic,0.0018156310481034345,0.0016898055706839293
+3,Underperforming,46,District_Gampaha,categorical__District_Gampaha,Demographic,0.008210968739680318,0.0006332207299949106
+3,Underperforming,46,District_Kalutara,categorical__District_Kalutara,Demographic,0.006914635304653312,-0.0015996659163765611
+3,Underperforming,46,District_Kandy,categorical__District_Kandy,Demographic,0.0037942825004854117,0.0037942825004854117
+3,Underperforming,46,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.007224248961276243,0.003925250265151258
+3,Underperforming,46,District_Matara,categorical__District_Matara,Demographic,0.0024723483893626884,-0.0002929978768612477
+3,Underperforming,46,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0031207828253683144,-4.455273835521231e-05
+3,Underperforming,46,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.012178799100588826,-0.0018776881595643496
+3,Underperforming,46,MediumAL_S,categorical__MediumAL_S,Demographic,0.005626899736012331,0.0005201213031674109
+3,Underperforming,46,MediumAL_T,categorical__MediumAL_T,Demographic,0.00937605449584133,-0.00032735106943005603
+3,Underperforming,46,District_Kegalle,categorical__District_Kegalle,Demographic,0.0013920989390522433,-0.0005448395609848535
+3,Underperforming,46,District_Puttalam,categorical__District_Puttalam,Demographic,0.0003992782983076908,-0.0003992782983076908
+3,Underperforming,46,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.0001800636828308267,0.0001800636828308267
+3,Average,43,Zscore,numeric__Zscore,Pre-academic,0.009382806198775228,0.0002914881351505913
+3,Average,43,English,numeric__English,Pre-academic,0.0051866606679639,0.0008386974310894657
+3,Average,43,S1,numeric__S1,Semester GPA,0.06725188577396395,-0.030930099815592003
+3,Average,43,S2,numeric__S2,Semester GPA,0.061344048005814646,-0.02411600066701265
+3,Average,43,S3,numeric__S3,Semester GPA,0.06644819505669652,-0.04037418611858446
+3,Average,43,Maths 2,numeric__Maths 2,Module grade,0.015554049181836307,0.003375389687465267
+3,Average,43,MgtAccounting,numeric__MgtAccounting,Module grade,0.00666779285122987,0.00019217643432962607
+3,Average,43,StatsII,numeric__StatsII,Module grade,0.018439557037324316,0.0066410327136046604
+3,Average,43,MIS,numeric__MIS,Module grade,0.003395173664758697,-0.00044053508282442677
+3,Average,43,Missing: English,numeric__missingindicator_English,Pre-academic,0.0011407904392527499,-0.00034089678924664177
+3,Average,43,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.014980742890378904,-0.0001566239403867009
+3,Average,43,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.004626982619526055,0.004626982619526055
+3,Average,43,Gender_M,categorical__Gender_M,Demographic,0.00745626613781721,-0.0019897628781203425
+3,Average,43,Department_BPM,categorical__Department_BPM,Demographic,0.012215311154996099,-0.0019336488033628724
+3,Average,43,Department_FSM,categorical__Department_FSM,Demographic,0.016538951204477282,0.0050415818128188685
+3,Average,43,District_Badulla,categorical__District_Badulla,Demographic,0.0016596349108779131,-0.0013177233039302011
+3,Average,43,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00016967079069165974,-0.00016967079069165974
+3,Average,43,District_Colombo,categorical__District_Colombo,Demographic,0.00978990606205814,-0.00013979636060286867
+3,Average,43,District_Galle,categorical__District_Galle,Demographic,0.005340135427828485,-0.0014452335782128981
+3,Average,43,District_Gampaha,categorical__District_Gampaha,Demographic,0.006585788750596971,-0.0014857280533011356
+3,Average,43,District_Kalutara,categorical__District_Kalutara,Demographic,0.005315527003664669,-0.0035744736915705867
+3,Average,43,District_Kandy,categorical__District_Kandy,Demographic,0.007282396105767117,-0.00017746935826017901
+3,Average,43,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0023777421495112727,-0.0011817430876116838
+3,Average,43,District_Matara,categorical__District_Matara,Demographic,0.003467162628734774,0.0008703394288677073
+3,Average,43,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0033410555758625234,-2.9654974272865923e-05
+3,Average,43,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.011498281391787095,-0.001836846387080369
+3,Average,43,MediumAL_S,categorical__MediumAL_S,Demographic,0.005077592097377247,0.00040919419569421066
+3,Average,43,MediumAL_T,categorical__MediumAL_T,Demographic,0.0068151486036066265,-0.001079590214700793
+3,Average,43,District_Kegalle,categorical__District_Kegalle,Demographic,0.0011428006010774047,-0.0003351881790116537
+3,Average,43,District_Puttalam,categorical__District_Puttalam,Demographic,0.0003756610513322253,-0.0003756610513322253
+3,Average,43,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.00019262626535390762,0.00019262626535390762
+3,Performing,88,Zscore,numeric__Zscore,Pre-academic,0.008769264203778986,0.0027793384687750237
+3,Performing,88,English,numeric__English,Pre-academic,0.009475098963472517,0.00025482945693445
+3,Performing,88,S1,numeric__S1,Semester GPA,0.10115777101972823,0.08635216334993946
+3,Performing,88,S2,numeric__S2,Semester GPA,0.1139904515435047,0.10548072340155673
+3,Performing,88,S3,numeric__S3,Semester GPA,0.15304110895265788,0.14104991723347682
+3,Performing,88,Maths 2,numeric__Maths 2,Module grade,0.018291196365707488,-0.006413019047529763
+3,Performing,88,MgtAccounting,numeric__MgtAccounting,Module grade,0.010603495204619263,0.004374369075895449
+3,Performing,88,StatsII,numeric__StatsII,Module grade,0.029803482804126976,-0.020111788542912654
+3,Performing,88,MIS,numeric__MIS,Module grade,0.003716454741831264,0.00043087274642170543
+3,Performing,88,Missing: English,numeric__missingindicator_English,Pre-academic,0.002215021355848836,0.0005890957270663715
+3,Performing,88,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.0075691677357137555,0.0075691677357137555
+3,Performing,88,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.0056649067724751844,0.003626541745621077
+3,Performing,88,Gender_M,categorical__Gender_M,Demographic,0.006914967895930107,0.0004030790534677632
+3,Performing,88,Department_BPM,categorical__Department_BPM,Demographic,0.011565310936611116,0.0012550386724628976
+3,Performing,88,Department_FSM,categorical__Department_FSM,Demographic,0.022524622851545485,-0.00455826891927905
+3,Performing,88,District_Badulla,categorical__District_Badulla,Demographic,0.0026961535978295664,-0.0001014001569020465
+3,Performing,88,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00016581463635775837,-0.00016581463635775837
+3,Performing,88,District_Colombo,categorical__District_Colombo,Demographic,0.009679508321133965,0.0005034781040294298
+3,Performing,88,District_Galle,categorical__District_Galle,Demographic,0.0026815870562655083,0.0007051784447937747
+3,Performing,88,District_Gampaha,categorical__District_Gampaha,Demographic,0.008600621629052797,0.001206096590030197
+3,Performing,88,District_Kalutara,categorical__District_Kalutara,Demographic,0.009980354956742819,0.0017683882330741278
+3,Performing,88,District_Kandy,categorical__District_Kandy,Demographic,0.00904709743001616,-0.0020696397079226136
+3,Performing,88,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.003585371654717867,0.00010850480351311664
+3,Performing,88,District_Matara,categorical__District_Matara,Demographic,0.0026041742261134816,-7.078825582981052e-05
+3,Performing,88,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0024863783870086686,-0.0008112951694643451
+3,Performing,88,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.009364308500688102,0.0021280659811353207
+3,Performing,88,MediumAL_S,categorical__MediumAL_S,Demographic,0.006472546997007864,-0.0013538724037238448
+3,Performing,88,MediumAL_T,categorical__MediumAL_T,Demographic,0.006068642157185038,0.0002867285744311972
+3,Performing,88,District_Kegalle,categorical__District_Kegalle,Demographic,0.0006227875929856122,0.00021523117064367185
+3,Performing,88,District_Puttalam,categorical__District_Puttalam,Demographic,0.0003796993030909706,-0.0003796993030909706
+3,Performing,88,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,0.00017779015148195265,0.00017779015148195265
+4,Underperforming,46,Zscore,numeric__Zscore,Pre-academic,0.013866915112613652,-0.007375756090442427
+4,Underperforming,46,English,numeric__English,Pre-academic,0.009788895849263518,0.0006351578232197331
+4,Underperforming,46,S1,numeric__S1,Semester GPA,0.1338989851746902,-0.1332759745282675
+4,Underperforming,46,S2,numeric__S2,Semester GPA,0.07115059374030716,-0.06870421473858039
+4,Underperforming,46,S3,numeric__S3,Semester GPA,0.1455565783562105,-0.13864864016375228
+4,Underperforming,46,S4,numeric__S4,Semester GPA,0.23198059279271643,-0.22664358137434173
+4,Underperforming,46,Maths 2,numeric__Maths 2,Module grade,0.01560315533656737,0.011674044172029866
+4,Underperforming,46,MgtAccounting,numeric__MgtAccounting,Module grade,0.010106124709192778,0.005623496442158499
+4,Underperforming,46,StatsII,numeric__StatsII,Module grade,0.021964143019614822,0.019940334999971786
+4,Underperforming,46,MIS,numeric__MIS,Module grade,0.012063604905190541,-0.003367084907864284
+4,Underperforming,46,DataV,numeric__DataV,Module grade,0.003255473155551423,-0.0008269888891789801
+4,Underperforming,46,Missing: English,numeric__missingindicator_English,Pre-academic,0.0005723728770838536,-0.0003229599782040319
+4,Underperforming,46,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.009843740798977194,-0.004548644344823474
+4,Underperforming,46,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.004317039144394859,-0.0021222259215393437
+4,Underperforming,46,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.003744625739690075,0.003744625739690075
+4,Underperforming,46,Gender_M,categorical__Gender_M,Demographic,0.006096330960419015,0.000188251094087706
+4,Underperforming,46,Department_BPM,categorical__Department_BPM,Demographic,0.007060706839459693,-0.002321656323249309
+4,Underperforming,46,Department_FSM,categorical__Department_FSM,Demographic,0.007972894102401243,0.004015948122221704
+4,Underperforming,46,District_Badulla,categorical__District_Badulla,Demographic,0.0029288371294618415,9.50133234357689e-05
+4,Underperforming,46,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00019771401716007342,0.00019771401716007342
+4,Underperforming,46,District_Colombo,categorical__District_Colombo,Demographic,0.0045690107795057855,0.0019001264816795114
+4,Underperforming,46,District_Galle,categorical__District_Galle,Demographic,0.0012262540014456426,0.0012262540014456426
+4,Underperforming,46,District_Gampaha,categorical__District_Gampaha,Demographic,0.005002140157922952,0.0007687264990365416
+4,Underperforming,46,District_Kalutara,categorical__District_Kalutara,Demographic,0.002238942915132369,-0.0008640578534037422
+4,Underperforming,46,District_Kandy,categorical__District_Kandy,Demographic,0.0004905799757631103,0.00017600474596513453
+4,Underperforming,46,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0033119973237367693,0.0017399162607234216
+4,Underperforming,46,District_Matara,categorical__District_Matara,Demographic,0.0014621733283774095,0.0002457398301492068
+4,Underperforming,46,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0019956545980602917,-0.0007303073734487202
+4,Underperforming,46,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.006488594846856049,-0.0016427250913872303
+4,Underperforming,46,MediumAL_S,categorical__MediumAL_S,Demographic,0.00884224513384423,-0.0004245902932648302
+4,Underperforming,46,MediumAL_T,categorical__MediumAL_T,Demographic,0.006792431317480999,-0.0007361606249229505
+4,Underperforming,46,District_Kegalle,categorical__District_Kegalle,Demographic,0.0006511386998367859,0.0005073550050233846
+4,Underperforming,46,District_Puttalam,categorical__District_Puttalam,Demographic,0.0006762901538358841,-0.0006762901538358841
+4,Underperforming,46,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,4.251066837831999e-05,-4.251066837831999e-05
+4,Average,43,Zscore,numeric__Zscore,Pre-academic,0.012051835817474186,0.00041354610902236924
+4,Average,43,English,numeric__English,Pre-academic,0.004201909860228447,0.000173657801759276
+4,Average,43,S1,numeric__S1,Semester GPA,0.06058548798190811,-0.027939997272764885
+4,Average,43,S2,numeric__S2,Semester GPA,0.023993017729188305,-0.009830253256270356
+4,Average,43,S3,numeric__S3,Semester GPA,0.041524765954244036,-0.0248740967786232
+4,Average,43,S4,numeric__S4,Semester GPA,0.06335784493697715,-0.033845445681398204
+4,Average,43,Maths 2,numeric__Maths 2,Module grade,0.013299633502039465,0.0029413671381320443
+4,Average,43,MgtAccounting,numeric__MgtAccounting,Module grade,0.006228130674939085,0.0013350738020686816
+4,Average,43,StatsII,numeric__StatsII,Module grade,0.01223917251036168,0.006047652433268301
+4,Average,43,MIS,numeric__MIS,Module grade,0.0098461750552482,-0.0007454720058922354
+4,Average,43,DataV,numeric__DataV,Module grade,0.0016107219219227181,1.4209848687441412e-05
+4,Average,43,Missing: English,numeric__missingindicator_English,Pre-academic,0.0004583950277771794,-0.0004386813353877157
+4,Average,43,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.0035836824997070816,-5.743260629209587e-05
+4,Average,43,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.0011774457932773414,0.0011774457932773414
+4,Average,43,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.00389977015693818,0.00389977015693818
+4,Average,43,Gender_M,categorical__Gender_M,Demographic,0.0061284917841055294,-0.0011899041424632292
+4,Average,43,Department_BPM,categorical__Department_BPM,Demographic,0.007035500773922996,-0.0010695223226828623
+4,Average,43,Department_FSM,categorical__Department_FSM,Demographic,0.009136351492770103,0.0021764511859385933
+4,Average,43,District_Badulla,categorical__District_Badulla,Demographic,0.0019896563026082295,-0.0009656659991727788
+4,Average,43,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00021150801835728787,0.00021150801835728787
+4,Average,43,District_Colombo,categorical__District_Colombo,Demographic,0.005683857751005935,-0.00045654476983406956
+4,Average,43,District_Galle,categorical__District_Galle,Demographic,0.003931574149242473,-0.0017413063784101727
+4,Average,43,District_Gampaha,categorical__District_Gampaha,Demographic,0.004174132740725653,-0.00039730571477933406
+4,Average,43,District_Kalutara,categorical__District_Kalutara,Demographic,0.0017352488948189305,-0.0014246108485825673
+4,Average,43,District_Kandy,categorical__District_Kandy,Demographic,0.0010956745440180886,0.0003565580459531006
+4,Average,43,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0010857754484032147,-0.00016922201427468645
+4,Average,43,District_Matara,categorical__District_Matara,Demographic,0.0015404441717117828,0.00025685126542555285
+4,Average,43,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0042586477805835405,0.0013732286210815555
+4,Average,43,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.005826483765478129,-0.0007366308231459404
+4,Average,43,MediumAL_S,categorical__MediumAL_S,Demographic,0.006815967253329146,0.003026220055709623
+4,Average,43,MediumAL_T,categorical__MediumAL_T,Demographic,0.005048764060510844,-0.0014146334694037509
+4,Average,43,District_Kegalle,categorical__District_Kegalle,Demographic,0.0013987892813135396,-0.0007537850635318013
+4,Average,43,District_Puttalam,categorical__District_Puttalam,Demographic,0.0006545712332641405,-0.0006545712332641405
+4,Average,43,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,4.547652896285394e-05,-4.547652896285394e-05
+4,Performing,88,Zscore,numeric__Zscore,Pre-academic,0.011631758026607764,0.004133620270787788
+4,Performing,88,English,numeric__English,Pre-academic,0.008040709846951944,0.002430515465900225
+4,Performing,88,S1,numeric__S1,Semester GPA,0.09155865359054821,0.07840821970810706
+4,Performing,88,S2,numeric__S2,Semester GPA,0.04314531778132617,0.03927206138783354
+4,Performing,88,S3,numeric__S3,Semester GPA,0.09678933256784804,0.0893424838524521
+4,Performing,88,S4,numeric__S4,Semester GPA,0.14205706853440334,0.13584600601937458
+4,Performing,88,Maths 2,numeric__Maths 2,Module grade,0.016011766256072514,-0.007190135027744879
+4,Performing,88,MgtAccounting,numeric__MgtAccounting,Module grade,0.009030371116801548,-0.0018581428028033554
+4,Performing,88,StatsII,numeric__StatsII,Module grade,0.01946208841037801,-0.014399325055350177
+4,Performing,88,MIS,numeric__MIS,Module grade,0.012128639758453373,0.0026033208752074444
+4,Performing,88,DataV,numeric__DataV,Module grade,0.0020524639596659084,-5.928431093629256e-05
+4,Performing,88,Missing: English,numeric__missingindicator_English,Pre-academic,0.0009485159055502046,0.00011971040787943432
+4,Performing,88,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.002166171757168121,0.0014720893089497386
+4,Performing,88,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.0013898852499864515,0.0010018275006665014
+4,Performing,88,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.0038638161526281453,0.0038638161526281453
+4,Performing,88,Gender_M,categorical__Gender_M,Demographic,0.005344371151551561,-0.0007080286265260162
+4,Performing,88,Department_BPM,categorical__Department_BPM,Demographic,0.0068874882580159565,0.0008828234354755805
+4,Performing,88,Department_FSM,categorical__Department_FSM,Demographic,0.012428055969600262,-0.0030757446400940637
+4,Performing,88,District_Badulla,categorical__District_Badulla,Demographic,0.0022299024890854624,-0.0006871162482960371
+4,Performing,88,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00020670101794007678,0.00020670101794007678
+4,Performing,88,District_Colombo,categorical__District_Colombo,Demographic,0.0059994391698236955,-0.0008048157835015311
+4,Performing,88,District_Galle,categorical__District_Galle,Demographic,0.0021040759662005197,0.0002740187337419066
+4,Performing,88,District_Gampaha,categorical__District_Gampaha,Demographic,0.005271166676769996,0.001089960504508629
+4,Performing,88,District_Kalutara,categorical__District_Kalutara,Demographic,0.003932818676516578,0.0010766155167025579
+4,Performing,88,District_Kandy,categorical__District_Kandy,Demographic,0.0014283856047763955,4.893670297496065e-06
+4,Performing,88,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0017401968438245797,0.00025392128191125475
+4,Performing,88,District_Matara,categorical__District_Matara,Demographic,0.000959883009796423,-0.0003600915732682186
+4,Performing,88,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.002838288751997854,-2.839744083761736e-05
+4,Performing,88,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.0047991868998244055,0.0010270629817450531
+4,Performing,88,MediumAL_S,categorical__MediumAL_S,Demographic,0.009000650629458932,-0.0007768810786683661
+4,Performing,88,MediumAL_T,categorical__MediumAL_T,Demographic,0.004365869952847042,-0.0012923750337897563
+4,Performing,88,District_Kegalle,categorical__District_Kegalle,Demographic,0.00041911452641940004,0.0002546118287604179
+4,Performing,88,District_Puttalam,categorical__District_Puttalam,Demographic,0.0006565286145882092,-0.0006565286145882092
+4,Performing,88,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,4.197391751495736e-05,-4.197391751495736e-05
+5,Underperforming,46,Zscore,numeric__Zscore,Pre-academic,0.008531795833998672,-0.0048285154522894145
+5,Underperforming,46,English,numeric__English,Pre-academic,0.019961550148014925,-0.013645594133763575
+5,Underperforming,46,S1,numeric__S1,Semester GPA,0.08643708428846854,-0.0860966076338983
+5,Underperforming,46,S2,numeric__S2,Semester GPA,0.08774491132998004,-0.08391560463034292
+5,Underperforming,46,S3,numeric__S3,Semester GPA,0.14867899486331,-0.14283543844012506
+5,Underperforming,46,S4,numeric__S4,Semester GPA,0.12809599548164774,-0.12490207350243435
+5,Underperforming,46,S5,numeric__S5,Semester GPA,0.1514016434426504,-0.14745371770394416
+5,Underperforming,46,Maths 2,numeric__Maths 2,Module grade,0.009091115583934386,-0.007183012221782994
+5,Underperforming,46,MgtAccounting,numeric__MgtAccounting,Module grade,0.005110598150280543,0.005110423184764112
+5,Underperforming,46,StatsII,numeric__StatsII,Module grade,0.03400089963520902,0.030327142391164467
+5,Underperforming,46,MIS,numeric__MIS,Module grade,0.007528338834872534,-0.0022014099279520087
+5,Underperforming,46,DataV,numeric__DataV,Module grade,0.0059759810758019975,0.004093596022900709
+5,Underperforming,46,Missing: English,numeric__missingindicator_English,Pre-academic,0.0027312358122786474,0.0002879847113398048
+5,Underperforming,46,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.011369654593766425,-0.005322368720073257
+5,Underperforming,46,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.005971507676450701,0.0033122270795590838
+5,Underperforming,46,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.004645327405327317,0.004645327405327317
+5,Underperforming,46,Gender_M,categorical__Gender_M,Demographic,0.006584153199174955,0.0018919867903277223
+5,Underperforming,46,Department_BPM,categorical__Department_BPM,Demographic,0.006000087556963678,0.0013724231771150219
+5,Underperforming,46,Department_FSM,categorical__Department_FSM,Demographic,0.0066978784119421505,0.0032905340726578605
+5,Underperforming,46,District_Badulla,categorical__District_Badulla,Demographic,0.0024767466294504225,0.000474012381444929
+5,Underperforming,46,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.000297096625129337,-0.000297096625129337
+5,Underperforming,46,District_Colombo,categorical__District_Colombo,Demographic,0.006951680907793127,0.00369579715596112
+5,Underperforming,46,District_Galle,categorical__District_Galle,Demographic,0.0008218548851083734,0.0006979951283665079
+5,Underperforming,46,District_Gampaha,categorical__District_Gampaha,Demographic,0.0011414417161554468,-0.0006102060032125165
+5,Underperforming,46,District_Kalutara,categorical__District_Kalutara,Demographic,0.0007624162417616073,-0.0004470431060244573
+5,Underperforming,46,District_Kandy,categorical__District_Kandy,Demographic,0.0007479249888756057,0.0007479249888756057
+5,Underperforming,46,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.004091601183346902,0.0012262311415405
+5,Underperforming,46,District_Matara,categorical__District_Matara,Demographic,0.0011270330844805846,0.0002839235619004542
+5,Underperforming,46,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.00262813637511744,-0.0007218238460064261
+5,Underperforming,46,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.004349404874618106,-0.00073723700078929
+5,Underperforming,46,MediumAL_S,categorical__MediumAL_S,Demographic,0.011033364331741692,-0.0004006596696404762
+5,Underperforming,46,MediumAL_T,categorical__MediumAL_T,Demographic,0.00320503585205103,0.0008430890403055874
+5,Underperforming,46,District_Kegalle,categorical__District_Kegalle,Demographic,0.0003340127689977969,7.392022654932285e-06
+5,Underperforming,46,District_Puttalam,categorical__District_Puttalam,Demographic,0.00032632471319280355,-0.00032632471319280355
+5,Underperforming,46,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,8.555145765503534e-06,8.555145765503534e-06
+5,Average,43,Zscore,numeric__Zscore,Pre-academic,0.007264191143846437,0.0008225785621609003
+5,Average,43,English,numeric__English,Pre-academic,0.008918834717026654,-0.003109886771325831
+5,Average,43,S1,numeric__S1,Semester GPA,0.03767673521544753,-0.0161811296074785
+5,Average,43,S2,numeric__S2,Semester GPA,0.029964042916067593,-0.012457432154002173
+5,Average,43,S3,numeric__S3,Semester GPA,0.04347863173518982,-0.02769424757305891
+5,Average,43,S4,numeric__S4,Semester GPA,0.03550455993710983,-0.019419049903370313
+5,Average,43,S5,numeric__S5,Semester GPA,0.05469365163457131,-0.02672751303184083
+5,Average,43,Maths 2,numeric__Maths 2,Module grade,0.005952792694742593,-0.00236153419425676
+5,Average,43,MgtAccounting,numeric__MgtAccounting,Module grade,0.0029583505205581537,0.0005129963635179335
+5,Average,43,StatsII,numeric__StatsII,Module grade,0.0186303533062813,0.009259103931338837
+5,Average,43,MIS,numeric__MIS,Module grade,0.006035196498821153,-0.00021881488863487885
+5,Average,43,DataV,numeric__DataV,Module grade,0.0030687603561211367,-0.0004796865784127185
+5,Average,43,Missing: English,numeric__missingindicator_English,Pre-academic,0.0012931456032306801,-0.0012931456032306801
+5,Average,43,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.00492556929138582,-0.0004224656064423917
+5,Average,43,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.0014085023891447952,-0.0014085023891447952
+5,Average,43,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.004835066889211224,0.004835066889211224
+5,Average,43,Gender_M,categorical__Gender_M,Demographic,0.006377608256427007,-0.0002238806077794926
+5,Average,43,Department_BPM,categorical__Department_BPM,Demographic,0.0059516195553600965,0.0014507718939467782
+5,Average,43,Department_FSM,categorical__Department_FSM,Demographic,0.007625219779460893,0.0018829338361757238
+5,Average,43,District_Badulla,categorical__District_Badulla,Demographic,0.0014224395841166975,-0.0007289863192172488
+5,Average,43,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00031782429664998845,-0.00031782429664998845
+5,Average,43,District_Colombo,categorical__District_Colombo,Demographic,0.009107176288806938,-0.00031870726823068343
+5,Average,43,District_Galle,categorical__District_Galle,Demographic,0.0024496042089923995,-0.00025361640141145016
+5,Average,43,District_Gampaha,categorical__District_Gampaha,Demographic,0.0009769869132258266,-0.0003631096742777773
+5,Average,43,District_Kalutara,categorical__District_Kalutara,Demographic,0.0006587065948692895,-0.0005294925926641743
+5,Average,43,District_Kandy,categorical__District_Kandy,Demographic,0.001344278955905767,5.3238714618440094e-05
+5,Average,43,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0023880309107189393,-0.0006591852997269484
+5,Average,43,District_Matara,categorical__District_Matara,Demographic,0.001181640402549156,0.0002550938553357581
+5,Average,43,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.004392445206951475,0.0012028971455378442
+5,Average,43,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.004022194967903371,-0.00034530996914836917
+5,Average,43,MediumAL_S,categorical__MediumAL_S,Demographic,0.008717716671870603,0.003393970115320933
+5,Average,43,MediumAL_T,categorical__MediumAL_T,Demographic,0.00196682547888146,-0.0007978747797845568
+5,Average,43,District_Kegalle,categorical__District_Kegalle,Demographic,0.0005098492681983329,-0.00018114778901778415
+5,Average,43,District_Puttalam,categorical__District_Puttalam,Demographic,0.0002960124158500534,-0.0002960124158500534
+5,Average,43,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,9.152016400306108e-06,9.152016400306108e-06
+5,Performing,88,Zscore,numeric__Zscore,Pre-academic,0.007014048689485326,0.002717387877488032
+5,Performing,88,English,numeric__English,Pre-academic,0.016633811022663595,0.009442840322954739
+5,Performing,88,S1,numeric__S1,Semester GPA,0.06028748675151125,0.05197111860047125
+5,Performing,88,S2,numeric__S2,Semester GPA,0.054437240654824644,0.05035028229862279
+5,Performing,88,S3,numeric__S3,Semester GPA,0.09802925193347432,0.09028668476692168
+5,Performing,88,S4,numeric__S4,Semester GPA,0.07913880567781736,0.07576792489887937
+5,Performing,88,S5,numeric__S5,Semester GPA,0.09690733740392257,0.08862426460607317
+5,Performing,88,Maths 2,numeric__Maths 2,Module grade,0.008242181181241365,0.005433478645503331
+5,Performing,88,MgtAccounting,numeric__MgtAccounting,Module grade,0.00451882586128187,-0.0024464240743106128
+5,Performing,88,StatsII,numeric__StatsII,Module grade,0.03017847267489169,-0.022207876204809938
+5,Performing,88,MIS,numeric__MIS,Module grade,0.007611313271260611,0.0017002409271250007
+5,Performing,88,DataV,numeric__DataV,Module grade,0.0036417424428646992,-0.001416621677369793
+5,Performing,88,Missing: English,numeric__missingindicator_English,Pre-academic,0.0023950006115825346,-7.44790883671374e-05
+5,Performing,88,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.0026538914763617966,0.0020225033277929895
+5,Performing,88,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.0028093328541664146,9.410015909317162e-05
+5,Performing,88,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.004789765651749237,0.004789765651749237
+5,Performing,88,Gender_M,categorical__Gender_M,Demographic,0.005574755838911285,-0.0016772603160152626
+5,Performing,88,Department_BPM,categorical__Department_BPM,Demographic,0.005621657706168046,-0.0018462089186421144
+5,Performing,88,Department_FSM,categorical__Department_FSM,Demographic,0.010497279161108854,-0.002678262947773553
+5,Performing,88,District_Badulla,categorical__District_Badulla,Demographic,0.0019690276332096496,-9.889686460631875e-05
+5,Performing,88,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00031060101718067055,-0.00031060101718067055
+5,Performing,88,District_Colombo,categorical__District_Colombo,Demographic,0.009587692839908029,-0.0012128926191879218
+5,Performing,88,District_Galle,categorical__District_Galle,Demographic,0.0016008299077888094,-0.00015887881852511676
+5,Performing,88,District_Gampaha,categorical__District_Gampaha,Demographic,0.0014227104236403262,-2.3635283806931162e-05
+5,Performing,88,District_Kalutara,categorical__District_Kalutara,Demographic,0.0016196832517134435,0.0006797133062793277
+5,Performing,88,District_Kandy,categorical__District_Kandy,Demographic,0.001800815832601988,-0.0004249674116169776
+5,Performing,88,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0027575294548094413,-0.0002534460899113499
+5,Performing,88,District_Matara,categorical__District_Matara,Demographic,0.001567394000571716,-0.00020066347358768595
+5,Performing,88,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.00302087524200267,-0.0002867875015817528
+5,Performing,88,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.0033382695369655944,0.000655463752376238
+5,Performing,88,MediumAL_S,categorical__MediumAL_S,Demographic,0.011485540517411942,-0.0012821036830490725
+5,Performing,88,MediumAL_T,categorical__MediumAL_T,Demographic,0.0018999043247624298,-0.00041757610339131766
+5,Performing,88,District_Kegalle,categorical__District_Kegalle,Demographic,0.00017075546779864395,0.00017075546779864395
+5,Performing,88,District_Puttalam,categorical__District_Puttalam,Demographic,0.00030225305938366963,-0.00030225305938366963
+5,Performing,88,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,8.44712624826233e-06,8.44712624826233e-06
+6,Underperforming,46,Zscore,numeric__Zscore,Pre-academic,0.00984392525713976,-0.0053517039279239445
+6,Underperforming,46,English,numeric__English,Pre-academic,0.01664481026816673,-0.01203324861972137
+6,Underperforming,46,S1,numeric__S1,Semester GPA,0.08300610382266935,-0.08270221484331552
+6,Underperforming,46,S2,numeric__S2,Semester GPA,0.06725364595037735,-0.06388509183245557
+6,Underperforming,46,S3,numeric__S3,Semester GPA,0.1676211951195641,-0.16182233637901836
+6,Underperforming,46,S4,numeric__S4,Semester GPA,0.11480514880499419,-0.11294891361985353
+6,Underperforming,46,S5,numeric__S5,Semester GPA,0.08112200444061127,-0.0792751409200308
+6,Underperforming,46,S6,numeric__S6,Semester GPA,0.09505092486846423,-0.09223217779451767
+6,Underperforming,46,Maths 2,numeric__Maths 2,Module grade,0.007394625952026334,-0.0063057816881962265
+6,Underperforming,46,MgtAccounting,numeric__MgtAccounting,Module grade,0.0060573550662333855,0.005472884829563615
+6,Underperforming,46,StatsII,numeric__StatsII,Module grade,0.018758696912078904,0.01641648367218993
+6,Underperforming,46,MIS,numeric__MIS,Module grade,0.005951754090917253,-0.0014063900987037632
+6,Underperforming,46,DataV,numeric__DataV,Module grade,0.005329880745542749,0.0033475700132686147
+6,Underperforming,46,Missing: English,numeric__missingindicator_English,Pre-academic,0.0022933360753490013,0.0005781854081886134
+6,Underperforming,46,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.0076839739584858135,-0.0024868671926841245
+6,Underperforming,46,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.010314177763471225,0.006276864427491875
+6,Underperforming,46,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.0042205662226672495,0.0042205662226672495
+6,Underperforming,46,Gender_M,categorical__Gender_M,Demographic,0.0030220135268196214,2.962394267251195e-05
+6,Underperforming,46,Department_BPM,categorical__Department_BPM,Demographic,0.0025340341557069084,0.0005792297664805344
+6,Underperforming,46,Department_FSM,categorical__Department_FSM,Demographic,0.002158767535362277,0.0012703673805487977
+6,Underperforming,46,District_Badulla,categorical__District_Badulla,Demographic,0.002734150970236892,0.0006752546918423228
+6,Underperforming,46,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00022753297598171443,-0.00022753297598171443
+6,Underperforming,46,District_Colombo,categorical__District_Colombo,Demographic,0.0021704700974325437,0.001107990816512617
+6,Underperforming,46,District_Galle,categorical__District_Galle,Demographic,0.0005210424877825409,0.0005210424877825409
+6,Underperforming,46,District_Gampaha,categorical__District_Gampaha,Demographic,0.001704206965126238,3.97594703295343e-05
+6,Underperforming,46,District_Kalutara,categorical__District_Kalutara,Demographic,0.0008486423832119122,-0.00040592472780846654
+6,Underperforming,46,District_Kandy,categorical__District_Kandy,Demographic,0.000505275961905785,0.000505275961905785
+6,Underperforming,46,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0063333316902095356,0.0014344861054098577
+6,Underperforming,46,District_Matara,categorical__District_Matara,Demographic,0.0009489685143689679,0.0004552645223928479
+6,Underperforming,46,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0010340590713715377,-0.00019298145382091303
+6,Underperforming,46,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.002097214221660256,0.0001422985964679299
+6,Underperforming,46,MediumAL_S,categorical__MediumAL_S,Demographic,0.009152510504866875,-0.00103303786323011
+6,Underperforming,46,MediumAL_T,categorical__MediumAL_T,Demographic,0.005224688713092501,0.0017899921519674612
+6,Underperforming,46,District_Kegalle,categorical__District_Kegalle,Demographic,0.00016219511979749786,2.0139598349158606e-06
+6,Underperforming,46,District_Puttalam,categorical__District_Puttalam,Demographic,0.00014178685253599175,-0.00014178685253599175
+6,Underperforming,46,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,2.9199948367296294e-05,-2.9199948367296294e-05
+6,Average,43,Zscore,numeric__Zscore,Pre-academic,0.008264505929964376,0.0008481750241854833
+6,Average,43,English,numeric__English,Pre-academic,0.007562423483593476,-0.0022679754984360526
+6,Average,43,S1,numeric__S1,Semester GPA,0.03573406015430061,-0.014913287203644198
+6,Average,43,S2,numeric__S2,Semester GPA,0.0231421034417628,-0.00940459038077436
+6,Average,43,S3,numeric__S3,Semester GPA,0.049425576216921244,-0.03241772761045892
+6,Average,43,S4,numeric__S4,Semester GPA,0.030011273882073197,-0.014732586592087314
+6,Average,43,S5,numeric__S5,Semester GPA,0.029108033788675842,-0.014172854954187604
+6,Average,43,S6,numeric__S6,Semester GPA,0.02135589506158632,-0.0014450798025839207
+6,Average,43,Maths 2,numeric__Maths 2,Module grade,0.005123314026040181,-0.0018483988104162493
+6,Average,43,MgtAccounting,numeric__MgtAccounting,Module grade,0.003542771623308658,0.00031789746461455135
+6,Average,43,StatsII,numeric__StatsII,Module grade,0.010314880576977358,0.004750607202940572
+6,Average,43,MIS,numeric__MIS,Module grade,0.005036949424655152,-0.00044431830187505417
+6,Average,43,DataV,numeric__DataV,Module grade,0.0026802193551978574,-0.0003328194189561808
+6,Average,43,Missing: English,numeric__missingindicator_English,Pre-academic,0.0009038734100808962,-0.0009038734100808962
+6,Average,43,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.0036980634584090413,-0.0014209545784802308
+6,Average,43,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.002085640012903897,-0.002085640012903897
+6,Average,43,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.004384496949260543,0.004384496949260543
+6,Average,43,Gender_M,categorical__Gender_M,Demographic,0.002950576981198929,-0.00027430028365489086
+6,Average,43,Department_BPM,categorical__Department_BPM,Demographic,0.0026544019222219566,0.0006478449445007249
+6,Average,43,Department_FSM,categorical__Department_FSM,Demographic,0.0025719406323691575,0.0007583170632837163
+6,Average,43,District_Badulla,categorical__District_Badulla,Demographic,0.0015534102037390327,-0.0006327264087717377
+6,Average,43,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00024340736965485727,-0.00024340736965485727
+6,Average,43,District_Colombo,categorical__District_Colombo,Demographic,0.0027771528550711946,2.0835911048910967e-05
+6,Average,43,District_Galle,categorical__District_Galle,Demographic,0.001411046471044221,-0.0004647873315137064
+6,Average,43,District_Gampaha,categorical__District_Gampaha,Demographic,0.001486661245013835,0.00044204028065208744
+6,Average,43,District_Kalutara,categorical__District_Kalutara,Demographic,0.0008339218125479218,-0.00036031687886051503
+6,Average,43,District_Kandy,categorical__District_Kandy,Demographic,0.000838307959778738,0.00013384640434904165
+6,Average,43,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.0041276059581393425,-0.001120321644046102
+6,Average,43,District_Matara,categorical__District_Matara,Demographic,0.0010699558373392514,0.00032144218332556845
+6,Average,43,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0016455284959273936,0.0004252821849140881
+6,Average,43,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.00177472720868601,-8.000219367839222e-05
+6,Average,43,MediumAL_S,categorical__MediumAL_S,Demographic,0.006822139300066188,0.0027425733007261743
+6,Average,43,MediumAL_T,categorical__MediumAL_T,Demographic,0.003297199088702949,-0.0005958180035298693
+6,Average,43,District_Kegalle,categorical__District_Kegalle,Demographic,0.000307325714669463,-0.0001743004786725057
+6,Average,43,District_Puttalam,categorical__District_Puttalam,Demographic,0.0001256727627929867,-0.0001256727627929867
+6,Average,43,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,3.123715406734021e-05,-3.123715406734021e-05
+6,Performing,88,Zscore,numeric__Zscore,Pre-academic,0.008166536039313537,0.0033553474360567105
+6,Performing,88,English,numeric__English,Pre-academic,0.013388684754930592,0.007759614073657431
+6,Performing,88,S1,numeric__S1,Semester GPA,0.05832097198047171,0.050457661103533606
+6,Performing,88,S2,numeric__S2,Semester GPA,0.0423636111069601,0.03940350384240297
+6,Performing,88,S3,numeric__S3,Semester GPA,0.10944837707492647,0.09998394247738927
+6,Performing,88,S4,numeric__S4,Semester GPA,0.06692016080634021,0.06389494215481525
+6,Performing,88,S5,numeric__S5,Semester GPA,0.05380023317128501,0.0492561504739569
+6,Performing,88,S6,numeric__S6,Semester GPA,0.054560045934641165,0.04821954729014617
+6,Performing,88,Maths 2,numeric__Maths 2,Module grade,0.007144799740558427,0.0047820183691303164
+6,Performing,88,MgtAccounting,numeric__MgtAccounting,Module grade,0.005376906127158584,-0.0035810316888134266
+6,Performing,88,StatsII,numeric__StatsII,Module grade,0.016929960899775835,-0.01277150213338506
+6,Performing,88,MIS,numeric__MIS,Module grade,0.006271958774735306,0.001404529315175769
+6,Performing,88,DataV,numeric__DataV,Module grade,0.0030313984150307266,-0.0010021110876435755
+6,Performing,88,Missing: English,numeric__missingindicator_English,Pre-academic,0.0016138398637292445,-0.0001236950520656136
+6,Performing,88,Missing: StatsII,numeric__missingindicator_StatsII,Module grade,0.0017357147147286569,0.0006834439017558226
+6,Performing,88,Missing: MIS,numeric__missingindicator_MIS,Module grade,0.005040145557568183,0.0009495647745003054
+6,Performing,88,Missing: DataV,numeric__missingindicator_DataV,Module grade,0.004348618747077363,0.004348618747077363
+6,Performing,88,Gender_M,categorical__Gender_M,Demographic,0.002617651595974384,-0.0001536626911569095
+6,Performing,88,Department_BPM,categorical__Department_BPM,Demographic,0.002432633927863445,-0.0003170129498690153
+6,Performing,88,Department_FSM,categorical__Department_FSM,Demographic,0.003507083249977273,-0.000803999351101949
+6,Performing,88,District_Badulla,categorical__District_Badulla,Demographic,0.0020699697530024686,-4.934405478076789e-05
+6,Performing,88,District_Batticaloa,categorical__District_Batticaloa,Demographic,0.00023787538398088324,-0.00023787538398088324
+6,Performing,88,District_Colombo,categorical__District_Colombo,Demographic,0.002879360738943008,-0.00023147194016822088
+6,Performing,88,District_Galle,categorical__District_Galle,Demographic,0.0009913579831584498,6.820043730107275e-06
+6,Performing,88,District_Gampaha,categorical__District_Gampaha,Demographic,0.0016984630548865856,-5.894401250021751e-05
+6,Performing,88,District_Kalutara,categorical__District_Kalutara,Demographic,0.001357113097568529,0.00013407383555509892
+6,Performing,88,District_Kandy,categorical__District_Kandy,Demographic,0.0012259112444250849,-0.0002856427240520049
+6,Performing,88,District_Kurunegala,categorical__District_Kurunegala,Demographic,0.00464905689289327,-0.0005025345593558645
+6,Performing,88,District_Matara,categorical__District_Matara,Demographic,0.0016459516249420195,-0.0003373318418704288
+6,Performing,88,District_Ratnapura,categorical__District_Ratnapura,Demographic,0.0011371573830126138,-0.00011263083344465807
+6,Performing,88,District (rare categories),categorical__District_infrequent_sklearn,Demographic,0.0015303582099192613,5.542406486923776e-06
+6,Performing,88,MediumAL_S,categorical__MediumAL_S,Demographic,0.008924499879280479,-0.000784095990550535
+6,Performing,88,MediumAL_T,categorical__MediumAL_T,Demographic,0.003176839072073522,-0.0007241477578350911
+6,Performing,88,District_Kegalle,categorical__District_Kegalle,Demographic,0.0001201214908744456,1.8005565253076816e-05
+6,Performing,88,District_Puttalam,categorical__District_Puttalam,Demographic,0.00012917035009631195,-0.00012917035009631195
+6,Performing,88,District_Nuwaraeliya,categorical__District_Nuwaraeliya,Demographic,2.8831262150537493e-05,-2.8831262150537493e-05

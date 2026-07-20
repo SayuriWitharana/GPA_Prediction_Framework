@@ -1,16 +1,8 @@
 pandas
 numpy
 seaborn
-matplot
+matplotlib
 scikit-learn
 openpyxl
-pylance
-pathlib
 statsmodels
 shap
-# sklearn.model_selection
-# sklearn.pipeline
-# sklearn.linear_model
-# sklearn.compose
-# sklearn.impute
-# sklearn.preprocessing
