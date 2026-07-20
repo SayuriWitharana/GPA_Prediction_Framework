@@ -78,7 +78,7 @@ def make_pipeline(model, numeric):
     ])
     categorical_transformer = Pipeline([
         ("imputer", SimpleImputer(strategy="most_frequent")),
-        ("onehot", OneHotEncoder(handle_unknown="ignore", min_frequency=5, sparse_output=False)),
+        ("onehot", OneHotEncoder(drop="first", handle_unknown="ignore", min_frequency=5, sparse_output=False)),
     ])
     preprocessor = ColumnTransformer([
         ("numeric", numeric_transformer, numeric),
@@ -183,7 +183,7 @@ def write_interpretation(results, train, test):
         "",
         "## Model audit",
         "",
-        "Ridge (alpha=1) is compared with a conservative Random Forest (300 trees, depth 3). Model comparison uses 5-fold CV repeated 10 times in the training cohorts, stratified by the pre-defined final-GPA groups, followed by one untouched 2019 external evaluation. The test cohort is not used to tune models.",
+        "Ridge (alpha=1) is compared with a conservative Random Forest (100 trees, depth 3). Model comparison uses 5-fold CV repeated 10 times in the training cohorts, stratified by the pre-defined final-GPA groups, followed by one untouched 2019 external evaluation. The test cohort is not used to tune models.",
         "",
         "### Model-selection result",
         "",
@@ -222,7 +222,7 @@ def main():
         numeric = numeric_features(semester)
         models = {
             "Ridge": Ridge(alpha=1.0),
-            "Random Forest": RandomForestRegressor(n_estimators=300, max_depth=3, min_samples_leaf=2, random_state=42, n_jobs=1),
+            "Random Forest": RandomForestRegressor(n_estimators=100, max_depth=3, min_samples_leaf=2, random_state=42, n_jobs=1),
         }
         for model_name, model in models.items():
             rows.append(evaluate(train, test, semester, model_name, make_pipeline(model, numeric), cv))

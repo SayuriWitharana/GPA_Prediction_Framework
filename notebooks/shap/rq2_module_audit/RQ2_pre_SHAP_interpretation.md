@@ -15,7 +15,7 @@ The training cohort contains 177 students (2017–2018) and the held-out externa
 
 ## Model audit
 
-Ridge (alpha=1) is compared with a conservative Random Forest (300 trees, depth 3). Model comparison uses 5-fold CV repeated 10 times in the training cohorts, stratified by the pre-defined final-GPA groups, followed by one untouched 2019 external evaluation. The test cohort is not used to tune models.
+Ridge (alpha=1) is compared with a conservative Random Forest (100 trees, depth 3). Model comparison uses 5-fold CV repeated 10 times in the training cohorts, stratified by the pre-defined final-GPA groups, followed by one untouched 2019 external evaluation. The test cohort is not used to tune models.
 
 ### Model-selection result
 
@@ -23,10 +23,10 @@ Ridge (alpha=1) is compared with a conservative Random Forest (300 trees, depth 
 
 ### Observed temporal pattern
 
-- In repeated CV, Ridge is comparable to or better than Random Forest at every checkpoint under the pre-specified 0.01-RMSE practical-equivalence rule. Its RMSE falls from 0.343 at baseline to 0.249 after S1, 0.177 after S3, and 0.096 after S6. Its CV variability also narrows from 0.065 to 0.044.
-- The 2019 external cohort supports the later-semester pattern: Ridge has RMSE 0.252 (R² 0.725) at S3, 0.165 (R² 0.881) at S4, and 0.101 (R² 0.956) at S6. Ridge outperforms Random Forest externally at S4–S6 by 0.034, 0.033, and 0.048 RMSE points respectively.
-- S2 is a caution point, not evidence that modules harm attainment: external Ridge RMSE rises from 0.347 at S1 to 0.368 at S2 despite improving CV. This is likely cohort/distribution shift and the limited sample, so RQ2 should explain model behaviour rather than claim a module-driven performance gain.
-- Underperforming students remain least precise on the 2019 cohort (Ridge RMSE 0.410 at S3, 0.272 at S4, and 0.164 at S6), echoing RQ1. This group-wise result is descriptive support for the explanation phase; it does not redefine RQ1’s module-free reliability thresholds.
+- In repeated CV, Ridge is comparable to or better than Random Forest at every checkpoint under the pre-specified 0.01-RMSE practical-equivalence rule. Its RMSE falls from 0.346 at baseline to 0.248 after S1, 0.176 after S3, and 0.096 after S6. Its CV variability also narrows from 0.063 to 0.044.
+- The 2019 external cohort supports the later-semester pattern: Ridge has RMSE 0.251 (R² 0.726) at S3, 0.165 (R² 0.882) at S4, and 0.100 (R² 0.956) at S6. Ridge outperforms Random Forest externally at S4–S6 by 0.028, 0.031, and 0.047 RMSE points respectively.
+- S2 is a caution point, not evidence that modules harm attainment: external Ridge RMSE rises from 0.346 at S1 to 0.368 at S2 despite improving CV. This is likely cohort/distribution shift and the limited sample, so RQ2 should explain model behaviour rather than claim a module-driven performance gain.
+- Underperforming students remain least precise on the 2019 cohort (Ridge RMSE 0.409 at S3, 0.271 at S4, and 0.163 at S6), echoing RQ1. This group-wise result is descriptive support for the explanation phase; it does not redefine RQ1’s module-free reliability thresholds.
 
 The final SHAP stage should use the selected model at each checkpoint. If Ridge is selected, use `shap.LinearExplainer` with a training-background sample and report both signed and mean-absolute SHAP values. If Random Forest is selected, use `shap.TreeExplainer`; do not use a linear explainer for a non-linear model.
 

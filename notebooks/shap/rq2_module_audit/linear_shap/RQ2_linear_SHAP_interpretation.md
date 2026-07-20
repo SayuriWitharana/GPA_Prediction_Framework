@@ -15,9 +15,9 @@ All preprocessing is fitted on the training cohort only. Therefore, SHAP values 
 
 ## Early module signals
 
-At S2, the leading module-grade features are: Maths 2 (mean |SHAP| = 0.041); MgtAccounting (mean |SHAP| = 0.011).
+At S2, the leading module-grade features are: Maths 2 (mean |SHAP| = 0.040); MgtAccounting (mean |SHAP| = 0.011).
 
-At S3, the leading module-grade features are: Missing: StatsII (mean |SHAP| = 0.030); Maths 2 (mean |SHAP| = 0.028); StatsII (mean |SHAP| = 0.025).
+At S3, the leading module-grade features are: Missing: StatsII (mean |SHAP| = 0.030); Maths 2 (mean |SHAP| = 0.027); StatsII (mean |SHAP| = 0.025).
 
 ## Interpretation guardrails
 
