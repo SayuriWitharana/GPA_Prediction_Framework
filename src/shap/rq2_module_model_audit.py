@@ -35,7 +35,8 @@ MODULES_BY_SEMESTER = {
 MODULE_COLUMNS = [module for modules in MODULES_BY_SEMESTER.values() for module in modules]
 GRADE_POINTS = {
     "A+": 11, "A": 10, "A-": 9, "B+": 8, "B": 7, "B-": 6,
-    "C+": 5, "C": 4, "C-": 3, "D": 2, "S": 2, "F": 1,
+    "C+": 5, "C": 4, "C-": 3, "D": 2, "S": 2, "F": 0,
+    "I-we": 1, "I-ca": 1,
 }
 CATEGORICAL = ["Gender", "Department", "District", "MediumAL"]
 BASE_NUMERIC = ["Zscore", "English"]
@@ -56,8 +57,10 @@ def clean_data(path):
     # Correct known spelling variants before categorical encoding.
     df["District"] = df["District"].replace({"Kegalla": "Kegalle", "Kilinochi": "Kilinochchi"})
     for column in MODULE_COLUMNS:
-        # I-we/I-ca are incomplete/administrative outcomes, not zero grades.
-        # Keep them missing so imputation happens inside each training fold.
+        # I-we/I-ca mean the student did not sit the exam or did not complete
+        # the continuous-assessment component, i.e. a fail-equivalent outcome
+        # for that module. Coded as grade point 1 (one step above outright F,
+        # F=0) rather than treated as missing, so these are not imputed away.
         df[column] = df[column].astype("string").str.strip().map(GRADE_POINTS).astype(float)
     df["GroupLabel"] = df["FinalGPA"].map(performance_group)
     return df
@@ -178,7 +181,7 @@ def write_interpretation(results, train, test):
         "",
         "- Identifier and cohort-year columns are excluded from prediction.",
         "- District spelling variants are harmonised before one-hot encoding. Rare categories are grouped by the encoder (`min_frequency=5`), and unseen 2019 categories are safely ignored.",
-        "- Module letter grades are converted to an ordinal grade-point scale (A+ = 11 through F = 1; D/S = 2). Administrative/incomplete outcomes (`I-we`, `I-ca`) are treated as missing—not as a zero grade—and median-imputed within each training fold with a missingness indicator.",
+        "- Module letter grades are converted to an ordinal grade-point scale (A+ = 11 through F = 0; D/S = 2). Administrative/incomplete outcomes (`I-we`, `I-ca` — did not sit the exam or did not complete the continuous-assessment component) are coded as a fail-equivalent grade point of 1, one step above outright F, not imputed as missing.",
         "- Numeric values are median-imputed and standardised within each fold. This makes Ridge coefficients/linear SHAP comparable while avoiding validation or test leakage.",
         "",
         "## Model audit",

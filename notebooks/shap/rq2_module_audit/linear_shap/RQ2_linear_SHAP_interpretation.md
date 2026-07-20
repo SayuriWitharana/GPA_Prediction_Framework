@@ -17,9 +17,9 @@ All preprocessing is fitted on each fold's training portion only, so SHAP values
 
 ## Early module signals
 
-At S2, the leading module-grade features are: Maths 2 (mean |SHAP| = 0.029); MgtAccounting (mean |SHAP| = 0.013).
+At S2, the leading module-grade features are: Maths 2 (mean |SHAP| = 0.025); MgtAccounting (mean |SHAP| = 0.015).
 
-At S3, the leading module-grade features are: StatsII (mean |SHAP| = 0.028); Maths 2 (mean |SHAP| = 0.018); Missing: StatsII (mean |SHAP| = 0.015).
+At S3, the leading module-grade features are: Maths 2 (mean |SHAP| = 0.025); StatsII (mean |SHAP| = 0.023); MIS (mean |SHAP| = 0.012).
 
 ## Interpretation guardrails
 
@@ -31,5 +31,5 @@ Individual signed module SHAP must be read as **conditional** attribution: once 
 
 - `linear_shap_feature_importance.csv` / `linear_shap_family_importance.csv`: training-cohort out-of-fold SHAP by checkpoint.
 - `linear_shap_family_heatmap.png`, `linear_shap_top_features_by_semester.png`, and checkpoint beeswarms (training cohort).
-- Early-module dependence plots (original grade units) for: S2: Maths 2, S3: StatsII, S4: StatsII.
+- Early-module dependence plots (original grade units) for: S2: Maths 2, S3: Maths 2, S4: Maths 2.
 - `external_check/`: the same feature/family summaries and heatmap computed on the 2019 cohort for robustness, subject to the cohort-shift caveat above.

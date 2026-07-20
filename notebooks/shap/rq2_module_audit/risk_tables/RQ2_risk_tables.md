@@ -16,6 +16,7 @@ These are descriptive associations in small cohorts — several bands hold fewer
 - From semester 2: **S2 in band "Below 2.70"** — 86% underperformance rate (37/43 students; 3.3x the 26% base rate).
 - From semester 2: **MgtAccounting in band "C- to C+"** — 62% underperformance rate (33/53 students; 2.4x the 26% base rate).
 - From semester 2: **Maths 2 in band "C- to C+"** — 47% underperformance rate (36/77 students; 1.8x the 26% base rate).
+- From semester 3: **StatsII in band "D or F"** — 91% underperformance rate (10/11 students; 3.5x the 26% base rate).
 - From semester 3: **S3 in band "Below 2.70"** — 88% underperformance rate (37/42 students; 3.4x the 26% base rate).
 - From semester 3: **StatsII in band "C- to C+"** — 49% underperformance rate (27/55 students; 1.9x the 26% base rate).
 - From semester 3: **MIS in band "C- to C+"** — 43% underperformance rate (6/14 students; 1.6x the 26% base rate).
@@ -29,7 +30,7 @@ These are descriptive associations in small cohorts — several bands hold fewer
 
 - Pre-entry (S0): Zscore and English bands flag students for light-touch monitoring from day one.
 - After each semester, check newly available bands: semester GPA bands plus the modules completed that semester (S2: Maths 2, MgtAccounting; S3: StatsII, MIS; S4: DataV).
-- An "Incomplete/missing" module outcome (I-we / I-ca) is itself a follow-up trigger, independent of grades.
+- "I-we"/"I-ca" outcomes (did not sit the exam or did not complete the continuous-assessment component) are coded as fail-equivalent and appear inside the "D or F" band above, not as a separate category.
 - Combine with the SHAP early-warning signals (`linear_shap/underperformance/`): a student in a high-lift band whose profile also carries negative SHAP signals is a priority for advisor review.
 
 ## Files

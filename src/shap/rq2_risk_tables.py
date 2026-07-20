@@ -174,7 +174,7 @@ These are descriptive associations in small cohorts — several bands hold fewer
 
 - Pre-entry (S0): Zscore and English bands flag students for light-touch monitoring from day one.
 - After each semester, check newly available bands: semester GPA bands plus the modules completed that semester (S2: Maths 2, MgtAccounting; S3: StatsII, MIS; S4: DataV).
-- An "Incomplete/missing" module outcome (I-we / I-ca) is itself a follow-up trigger, independent of grades.
+- "I-we"/"I-ca" outcomes (did not sit the exam or did not complete the continuous-assessment component) are coded as fail-equivalent and appear inside the "D or F" band above, not as a separate category.
 - Combine with the SHAP early-warning signals (`linear_shap/underperformance/`): a student in a high-lift band whose profile also carries negative SHAP signals is a priority for advisor review.
 
 ## Files
