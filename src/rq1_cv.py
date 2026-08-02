@@ -57,7 +57,7 @@ def main():
         X = df[numeric_features + CATEGORICAL]
         cv = get_cv()
 
-        pooled_rmse, pooled_r2 = [], []
+        pooled_rmse, pooled_r2, pooled_bias = [], [], []
         group_rmse = {g: [] for g in GROUPS}
         group_r2 = {g: [] for g in GROUPS}
         group_bias = {g: [] for g in GROUPS}
@@ -74,6 +74,7 @@ def main():
 
             pooled_rmse.append(root_mean_squared_error(y_val, y_pred))
             pooled_r2.append(r2_score(y_val, y_pred))
+            pooled_bias.append(np.mean(y_val.to_numpy() - y_pred))
 
             for g in GROUPS:
                 mask = (g_val == g).to_numpy()
@@ -90,6 +91,7 @@ def main():
             "cv_rmse_mean": np.mean(pooled_rmse),
             "cv_rmse_sd": np.std(pooled_rmse),
             "cv_r2_mean": np.mean(pooled_r2),
+            "cv_bias_mean": np.mean(pooled_bias),
         }
         for g in GROUPS:
             row[f"{g}_rmse"] = np.mean(group_rmse[g])
