@@ -12,13 +12,12 @@ DISTRICT_SPELLING_FIXES = {
     "Kilinochi": "Kilinochchi",
 }
 
-
 def clean_categoricals(df, categorical_features):
     """Strip whitespace and harmonise known spelling variants in-place.
-
     Shared by both RQ1 and RQ2 pipelines so the same student is encoded
     identically regardless of which analysis is reading the data.
     """
+    
     df = df.copy()
     for column in categorical_features:
         df[column] = df[column].astype("string").str.strip()
