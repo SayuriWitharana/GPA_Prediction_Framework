@@ -20,6 +20,7 @@ OUT = RESULTS_DIR / "cv_results.csv"
 
 def main():
     df = pd.read_excel(DATA / "2017-2018 TrainSet.xlsx")
+    df = df.drop_duplicates()  # raw file has one exact-duplicate row (Index No. 176001R)
     df = clean_categoricals(df, CATEGORICAL)
     df = add_group_label(df)
     y = df["FinalGPA"]
@@ -73,11 +74,11 @@ def main():
             row[f"{g}_bias"] = np.mean(group_bias[g])
         rows.append(row)
 
-    out = pd.DataFrame(rows)
+    out = pd.DataFrame(rows).round(3)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(OUT, index=False)
     pd.set_option("display.width", 200)
-    print(out.round(3).to_string(index=False))
+    print(out.to_string(index=False))
     print(f"\nSaved: {OUT}")
 
 

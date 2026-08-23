@@ -52,6 +52,7 @@ def bootstrap_group(actual, pred, rng, n_boot=N_BOOT):
 
 def main():
     train = pd.read_excel(DATA / "2017-2018 TrainSet.xlsx")
+    train = train.drop_duplicates()  # raw file has one exact-duplicate row (Index No. 176001R)
     train = clean_categoricals(train, CATEGORICAL)
     train = add_group_label(train)
     test = pd.read_excel(DATA / "2019 TestSet.xlsx")
@@ -73,11 +74,11 @@ def main():
             stats = bootstrap_group(y_true[mask], y_pred[mask], rng)
             rows.append({"semester": semester, "group": g, "n": int(mask.sum()), **stats})
 
-    out = pd.DataFrame(rows)
+    out = pd.DataFrame(rows).round(3)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(OUT, index=False)
     pd.set_option("display.width", 160)
-    print(out.round(3).to_string(index=False))
+    print(out.to_string(index=False))
     print(f"\nSaved: {OUT}")
 
 
