@@ -10,7 +10,10 @@ For someone who just wants to run the pipeline, not read about it first.
 **0. Data isn't in git.** `data/` is gitignored (student records). A fresh
 clone has no `.xlsx` files — get `2017-2018 TrainSet.xlsx` and
 `2019 TestSet.xlsx` separately and place them in `data/raw/`. Then
-`pip install -r requirements.txt`.
+`pip install -r requirements.txt`, and run `nbstripout --install` once —
+this wires up the git filter that strips notebook outputs on commit
+(`.gitattributes` declares it; the local git config it needs is per-clone,
+so every fresh clone has to run this once).
 
 **1. Run these four commands, from the repo root, in this order:**
 
@@ -140,15 +143,20 @@ logic.
 ## 4. RQ2: the SHAP pipeline
 
 RQ2 lives under `src/rq2/` as a package (each script keeps its historical
-`rq2_` filename prefix for clarity; they chain-import each other by bare
-module name, so run them from within `src/rq2/` or via their full path —
-`python src/rq2/rq2_module_model_audit.py`, not `-m`). Read these five
-scripts in this exact order — they import from each other:
+`rq2_` filename prefix for clarity). Same invocation convention as RQ1 now:
+run each with `python -m src.rq2.<script name>` from the repo root — e.g.
+`python -m src.rq2.rq2_module_model_audit`. They chain-import each other via
+proper package imports (`from src.rq2.rq2_module_model_audit import ...`),
+not bare module names, so this is the only way to run them; running a
+script by direct path (`python src/rq2/rq2_linear_shap.py`) will fail with
+an import error. Read these five scripts in this exact order — they import
+from each other:
 
 1. `src/rq2/rq2_module_model_audit.py` — loads data, defines the module
    grade-point scale (**this is where the F=0/I-we=1 recoding lives**, in
    `GRADE_POINTS`), picks Ridge vs Random Forest, writes
-   `RQ2_pre_SHAP_interpretation.md`.
+   `RQ2_pre_SHAP_interpretation.md`. Run first — the other four import
+   constants and helper functions from it.
 2. `src/rq2/rq2_linear_shap.py` — imports from #1; computes out-of-fold
    SHAP per semester, writes the linear-SHAP doc and family heatmap.
 3. `src/rq2/rq2_group_shap.py` — imports from #2; splits SHAP by the

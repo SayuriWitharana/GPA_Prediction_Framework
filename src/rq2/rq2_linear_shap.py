@@ -18,7 +18,7 @@ import shap
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import StratifiedKFold
 
-from rq2_module_model_audit import (
+from src.rq2.rq2_module_model_audit import (
     BASE_NUMERIC,
     CATEGORICAL,
     MODULE_COLUMNS,

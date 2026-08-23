@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from rq2_module_model_audit import (
+from src.rq2.rq2_module_model_audit import (
     MODULES_BY_SEMESTER,
     OUT as AUDIT_OUT,
     TEST_PATH,

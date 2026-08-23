@@ -5,7 +5,6 @@ to explain the evolution of GPA prediction reliability, as specified in the
 TALE research positioning document.
 """
 
-import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -18,10 +17,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.pipeline import Pipeline
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-from src.preprocessing import clean_categoricals, get_preprocessor  # noqa: E402
+from src.preprocessing import clean_categoricals, get_preprocessor
 
+ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" / "raw"
 OUT = ROOT / "results" / "RQ2"
 TRAIN_PATH = DATA / "DatasetWithModules_Training.xlsx"

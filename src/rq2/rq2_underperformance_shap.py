@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from rq2_linear_shap import feature_family, oof_shap, tidy_feature_name
-from rq2_module_model_audit import OUT as AUDIT_OUT, TRAIN_PATH, clean_data
+from src.rq2.rq2_linear_shap import feature_family, oof_shap, tidy_feature_name
+from src.rq2.rq2_module_model_audit import OUT as AUDIT_OUT, TRAIN_PATH, clean_data
 
 
 OUT = AUDIT_OUT / "linear_shap" / "underperformance"
