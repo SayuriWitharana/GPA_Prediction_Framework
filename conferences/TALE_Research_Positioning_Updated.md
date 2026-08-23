@@ -235,6 +235,16 @@ The integrated framework contributes by providing:
 
 ------------------------------------------------------------------------
 
+# Limitations
+
+- **Single institution, two cohorts.** 2017–2018 training cohort (n ≈ 177) and 2019 external test cohort (n = 93). Findings describe this programme's grading and cohort patterns and are not yet shown to generalise to other institutions or intakes.
+- **Cohort shift in module grades.** The 2019 cohort shows visibly inflated module grades relative to 2017–2018 (e.g. 70% A/A+ in Maths 2 versus 16% in training), which compresses module-grade variance and mechanically understates module-level SHAP importance when the 2019 cohort is used as the explanation target. This is why the 2017–2018 training cohort, not 2019, is the primary explanation target throughout RQ2; 2019 is reported only as a robustness check.
+- **Two cohorts cannot establish a trend.** It is not possible to tell whether the 2019 grade pattern is a genuine, ongoing drift or a single-year anomaly without a third cohort.
+- **Small subgroup sizes.** E.g. 46 eventual underperformers in the training cohort. Subgroup statistics (SHAP group comparisons, group R², risk-table bands) carry wide uncertainty; RQ2's underperformance signals therefore use bootstrap confidence intervals with FDR correction rather than point estimates alone, and RQ1 group-level R² should not be reported without the restricted-range caveat documented in `notebooks/rq1_reliability/RQ1_reliability_interpretation.md`.
+- **Demographic features appear as early SHAP drivers.** Gender and department show up among the top drivers at early checkpoints (S0–S2). This is reported for transparency and fairness auditing — see the fairness note in `notebooks/shap/rq2_module_audit/group_shap/RQ2_group_SHAP_interpretation.md` — not as an intervention trigger.
+
+------------------------------------------------------------------------
+
 # Core Message
 
 The central contribution of this research is **not**:
