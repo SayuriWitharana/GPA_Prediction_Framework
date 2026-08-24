@@ -1,13 +1,3 @@
-"""Regenerates the RQ1 Stage-1 CV all-metrics summary table.
-
-Reshapes results/RQ1/cv_results.csv (one row per semester, pooled and
-per-group columns side by side) into one markdown table per group (Pooled,
-High-performing, Average, Underperforming), each with every metric across
-all seven checkpoints, so there's one clean, regeneratable place to look
-for "all metrics per semester" instead of hand-typing numbers into
-RQ1_reliability_interpretation.md.
-"""
-
 import pandas as pd
 
 from src.rq1.config import GROUPS, RESULTS_DIR
@@ -59,9 +49,9 @@ def main():
     content = (
         "# RQ1 Stage-1 CV summary table\n\n"
         "Auto-generated from `cv_results.csv` by "
-        "`results/scripts/rq1/summary_table.py` — do not hand-edit; "
-        "re-run `python -m results.scripts.rq1.summary_table` after any "
-        "`src/rq1/cv.py` re-run.\n\n" + "\n\n".join(sections_markdown) + "\n"
+        "`results/scripts/rq1/stage1_summary_table.py` — do not hand-edit; "
+        "re-run `python -m results.scripts.rq1.stage1_summary_table` after any "
+        "`src/rq1/stage1_cv.py` re-run.\n\n" + "\n\n".join(sections_markdown) + "\n"
     )
     OUT_PATH.write_text(content, encoding="utf-8")
     print(content)

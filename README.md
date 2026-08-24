@@ -30,10 +30,11 @@ nbstripout --install   # one-time, strips notebook outputs on commit
 ## Quickstart — reproducing RQ1
 
 ```bash
-python -m src.rq1.cv                        # Stage 1: 50-fold CV, S0-S6
-python -m src.rq1.external_bootstrap         # Stage 2: 2019 external cohort, bootstrap CIs
-python -m results.scripts.rq1.summary_table  # clean per-group metrics tables
-python -m results.scripts.rq1.eda_plot       # FinalGPA distribution chart
+python -m src.rq1.stage1_cv                          # Stage 1: 50-fold CV, S0-S6
+python -m src.rq1.stage2_external_bootstrap           # Stage 2: 2019 external cohort, bootstrap CIs, S0-S6
+python -m results.scripts.rq1.stage1_summary_table    # clean per-group Stage 1 metrics tables
+python -m results.scripts.rq1.stage2_summary_table    # clean per-group Stage 2 metrics tables
+python -m results.scripts.rq1.eda_plot                # FinalGPA distribution chart
 ```
 
 Outputs land in `results/RQ1/`. See the

@@ -15,17 +15,18 @@ this wires up the git filter that strips notebook outputs on commit
 (`.gitattributes` declares it; the local git config it needs is per-clone,
 so every fresh clone has to run this once).
 
-**1. Run these four commands, from the repo root, in this order:**
+**1. Run these five commands, from the repo root, in this order:**
 
 | # | Command | Needs | Produces |
 |---|---|---|---|
-| 1 | `python -m src.rq1.cv` | TrainSet.xlsx | `results/RQ1/cv_results.csv` |
-| 2 | `python -m src.rq1.external_bootstrap` | TrainSet.xlsx + TestSet.xlsx | `results/RQ1/external_bootstrap_ci.csv` |
-| 3 | `python -m results.scripts.rq1.summary_table` | output of #1 | `results/RQ1/cv_summary_table.md` |
-| 4 | `python -m results.scripts.rq1.eda_plot` | TrainSet.xlsx | `results/RQ1/ICODE_EDA_Summary.png` |
+| 1 | `python -m src.rq1.stage1_cv` | TrainSet.xlsx | `results/RQ1/cv_results.csv` |
+| 2 | `python -m src.rq1.stage2_external_bootstrap` | TrainSet.xlsx + TestSet.xlsx | `results/RQ1/external_bootstrap_ci.csv` |
+| 3 | `python -m results.scripts.rq1.stage1_summary_table` | output of #1 | `results/RQ1/cv_summary_table.md` |
+| 4 | `python -m results.scripts.rq1.stage2_summary_table` | output of #2 | `results/RQ1/external_summary_table.md` |
+| 5 | `python -m results.scripts.rq1.eda_plot` | TrainSet.xlsx | `results/RQ1/ICODE_EDA_Summary.png` |
 
-Only real dependency: #3 needs #1 to have already run. #2 and #4 are
-independent of everything else. All four run in seconds.
+Two real dependencies: #3 needs #1, #4 needs #2, both already run. #2 and
+#5 are independent of everything else. All five run in seconds.
 
 **2. One notebook still needs manual execution:**
 `results/scripts/rq1/plots_for_ICODE.ipynb` — open in Jupyter, run all
@@ -85,15 +86,18 @@ feature sets, categorical columns, group cutoffs) and `src/rq1/groups.py`
 (`assign_perf_group`) are the shared building blocks every RQ1 script below
 imports from — read those two first.
 
-- `src/rq1/cv.py` — Stage-1: repeated stratified 5-fold CV (50 splits) at
+- `src/rq1/stage1_cv.py` — Stage-1: repeated stratified 5-fold CV (50 splits) at
   each checkpoint S0-S6, computing pooled and per-group RMSE/R²/bias. Run it
-  yourself (`python -m src.rq1.cv`). Output:
+  yourself (`python -m src.rq1.stage1_cv`). Output:
   `results/RQ1/cv_results.csv`.
-- `src/rq1/external_bootstrap.py` — Stage-2: trains on the full 2017-2018
+- `src/rq1/stage2_external_bootstrap.py` — Stage-2: trains on the full 2017-2018
   cohort, evaluates once on the 2019 cohort, and bootstraps 95% confidence
-  intervals for the external RMSE/bias per group per semester. Run it
-  yourself (`python -m src.rq1.external_bootstrap`) to see it reproduce
-  the paper's Table III live. Output: `results/RQ1/external_bootstrap_ci.csv`.
+  intervals for the external RMSE/bias per group per semester, S0-S6 (originally
+  scoped to S2-S6 to match the paper's Table III, extended 2026-08-24 — there
+  was no technical reason to exclude S0/S1, the paper just never reported
+  them). Run it yourself (`python -m src.rq1.stage2_external_bootstrap`) to
+  see it reproduce the paper's Table III live. Output:
+  `results/RQ1/external_bootstrap_ci.csv`.
 - `results/scripts/rq1/eda_plot.py` — generates the FinalGPA distribution /
   by-group chart used in the ICODE presentation. Draws from already-loaded
   raw data rather than computing pipeline results, so it lives alongside the
@@ -104,18 +108,25 @@ imports from — read those two first.
   remaining `ICODE_*.png` conference figures from hardcoded paper-table
   values (not from `cv_results.csv` directly — see the note at the top of
   its first cell). Outputs land in `results/RQ1/`.
-- `results/scripts/rq1/summary_table.py` — regenerates
+- `results/scripts/rq1/stage1_summary_table.py` — regenerates
   `results/RQ1/cv_summary_table.md`, one clean table with every Stage-1
   metric (RMSE, RMSE SD, R², bias) for the pooled model and all three
   performance groups, one block per checkpoint S0-S6. Run with
-  `python -m results.scripts.rq1.summary_table` any time `cv_results.csv`
+  `python -m results.scripts.rq1.stage1_summary_table` any time `cv_results.csv`
   changes — this is the up-to-date source for "all metrics per semester,"
   not the hand-typed tables that used to live in the interpretation doc.
+- `results/scripts/rq1/stage2_summary_table.py` — the Stage-2 counterpart:
+  regenerates `results/RQ1/external_summary_table.md`, one table per
+  performance group (no Pooled section — Stage 2 never bootstraps a pooled
+  CI) with RMSE, its 95% CI, bias, and its 95% CI, S0-S6. Run with
+  `python -m results.scripts.rq1.stage2_summary_table` any time
+  `external_bootstrap_ci.csv` changes.
 - `results/RQ1/RQ1_reliability_interpretation.md` — the write-up
   synthesizing those two scripts' numbers, including the corrected R²
   framing and the pipeline-reconciliation note (why these numbers differ
-  slightly from RQ2's audit script). Points at `cv_summary_table.md` for
-  the full numbers rather than repeating them inline.
+  slightly from RQ2's audit script). Points at `cv_summary_table.md` and
+  `external_summary_table.md` for the full numbers rather than repeating
+  them inline.
 - `notebooks/RQ1/EDA/` — the exploratory notebooks on RQ1's own raw
   datasets (`eda 2017-2018.ipynb`, `eda 2019.ipynb`); `eda 2019.ipynb` is
   where the performance-group GPA thresholds were originally worked out.
@@ -128,8 +139,8 @@ imports from — read those two first.
   since it's part of the RQ1 methodology, not dead code.
 - `notebooks/RQ1/archive/` — superseded RQ1 notebooks kept for provenance
   only, not maintained and not where current numbers come from:
-  `RidgeRegression2017-2018.ipynb` (the original notebook `cv.py` and
-  `external_bootstrap.py` were extracted from — per-semester code was
+  `RidgeRegression2017-2018.ipynb` (the original notebook `stage1_cv.py`
+  and `stage2_external_bootstrap.py` were extracted from — per-semester code was
   copy-pasted seven times), `featureEngineering.ipynb`, `resultPlots.ipynb`,
   and an earlier snapshot `eda 2019 - Copy.ipynb`.
 
