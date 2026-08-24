@@ -1,6 +1,6 @@
 # RQ1 Stage-1 CV summary table
 
-Auto-generated from `cv_results.csv` by `results/scripts/rq1/summary_table.py` — do not hand-edit; re-run `python -m results.scripts.rq1.summary_table` after any `src/rq1/cv.py` re-run.
+Auto-generated from `cv_results.csv` by `results/scripts/rq1/stage1_summary_table.py` — do not hand-edit; re-run `python -m results.scripts.rq1.stage1_summary_table` after any `src/rq1/stage1_cv.py` re-run.
 
 ## Pooled
 

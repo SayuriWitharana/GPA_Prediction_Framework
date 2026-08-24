@@ -1,17 +1,3 @@
-"""Bootstrap confidence intervals for RQ1's Stage-2 external-cohort evaluation.
-
-Stage 2 (see results/RQ1/RQ1_reliability_interpretation.md) trains
-on the full 2017-2018 cohort and evaluates once on the 2019 cohort. A single
-evaluation is one draw from a small, group-split external set (19-50 students
-per group), so point-estimate RMSE/bias alone cannot assess whether the observed performance
-is sufficiently stable to support conclusions about reliability.
-Because each performance group contains only 19–50 students, the resulting RMSE and bias are point estimates
-from a single external evaluation and do not quantify the sampling uncertainty associated with these metrics.
-This script keeps the trained model fixed and resamples students within each performance group (with replacement)
-to estimate 95% bootstrap confidence intervals for the external RMSE and bias values reported in Table III.
-This is the Stage-2 counterpart to src/rq1/cv.py (Stage 1, cross-validation).
-"""
-
 import numpy as np
 import pandas as pd
 from sklearn.metrics import root_mean_squared_error
@@ -24,10 +10,6 @@ from src.rq1.groups import add_group_label
 OUT = RESULTS_DIR / "external_bootstrap_ci.csv"
 N_BOOT = 5000
 SEED = 42
-
-# Stage 2 starts evaluation at S2 (the earliest checkpoint the external test
-# is reported for); S0/S1 are Stage-1-only.
-EXTERNAL_FEATURE_SETS = {k: v for k, v in FEATURE_SETS.items() if k not in ("S0", "S1")}
 
 
 def bootstrap_group(actual, pred, rng, n_boot=N_BOOT):
@@ -52,7 +34,9 @@ def bootstrap_group(actual, pred, rng, n_boot=N_BOOT):
 
 def main():
     train = pd.read_excel(DATA / "2017-2018 TrainSet.xlsx")
-    train = train.drop_duplicates()  # raw file has one exact-duplicate row (Index No. 176001R)
+    train = (
+        train.drop_duplicates()
+    )  # raw file has one exact-duplicate row (Index No. 176001R)
     train = clean_categoricals(train, CATEGORICAL)
     train = add_group_label(train)
     test = pd.read_excel(DATA / "2019 TestSet.xlsx")
@@ -60,9 +44,11 @@ def main():
     test = add_group_label(test)
 
     rng = np.random.default_rng(SEED)
-    rows = []
-    for semester, numeric_features in EXTERNAL_FEATURE_SETS.items():
-        preprocessor = get_preprocessor(numeric_features=numeric_features, categorical_features=CATEGORICAL)
+    results = []
+    for semester, numeric_features in FEATURE_SETS.items():
+        preprocessor = get_preprocessor(
+            numeric_features=numeric_features, categorical_features=CATEGORICAL
+        )
         model = get_ridge_pipeline(preprocessor=preprocessor, alpha=1.0)
         model.fit(train[numeric_features + CATEGORICAL], train["FinalGPA"])
         y_pred = model.predict(test[numeric_features + CATEGORICAL])
@@ -72,9 +58,11 @@ def main():
         for g in GROUPS:
             mask = grp == g
             stats = bootstrap_group(y_true[mask], y_pred[mask], rng)
-            rows.append({"semester": semester, "group": g, "n": int(mask.sum()), **stats})
+            results.append(
+                {"semester": semester, "group": g, "n": int(mask.sum()), **stats}
+            )
 
-    out = pd.DataFrame(rows).round(3)
+    out = pd.DataFrame(results).round(3)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(OUT, index=False)
     pd.set_option("display.width", 160)

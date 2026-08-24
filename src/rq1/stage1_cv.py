@@ -26,7 +26,7 @@ def main():
     y = df["FinalGPA"]
     strata = df["GroupLabel"]
 
-    rows = []
+    results = []
     for semester, numeric_features in FEATURE_SETS.items():
         X = df[numeric_features + CATEGORICAL]
         cv = get_cv()
@@ -72,9 +72,9 @@ def main():
             row[f"{g}_rmse_sd"] = np.std(group_rmse[g])
             row[f"{g}_r2"] = np.mean(group_r2[g])
             row[f"{g}_bias"] = np.mean(group_bias[g])
-        rows.append(row)
+        results.append(row)
 
-    out = pd.DataFrame(rows).round(3)
+    out = pd.DataFrame(results).round(3)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(OUT, index=False)
     pd.set_option("display.width", 200)
